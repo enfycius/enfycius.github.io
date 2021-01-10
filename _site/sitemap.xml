@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/c++/Cpp-Tutorial-1/</loc>
-<lastmod>2020-09-27T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/c++/Cpp-Tutorial-2/</loc>
-<lastmod>2020-09-28T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/calculus/Double-Integrals-in-Polar-Coordinates/</loc>
-<lastmod>2020-10-25T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/c/FromTurboCToGCC/</loc>
 <lastmod>2020-10-27T00:00:00+09:00</lastmod>
 </url>
@@ -47,8 +35,5 @@
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/page2/</loc>
 </url>
 </urlset>
