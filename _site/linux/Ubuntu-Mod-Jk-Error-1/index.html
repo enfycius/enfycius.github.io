@@ -9,28 +9,32 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Posts by Category - JH’s</title>
-<meta name="description" content="For That.">
+<!-- begin _includes/seo.html --><title>Ubuntu mod_jk Error - JH’s</title>
+<meta name="description" content="Ubuntu mod_jk Error">
 
 
   <meta name="author" content="Jonghyeok Kim">
   
+  <meta property="article:author" content="Jonghyeok Kim">
+  
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="JH's">
-<meta property="og:title" content="Posts by Category">
-<meta property="og:url" content="http://localhost:4000/categories/">
+<meta property="og:title" content="Ubuntu mod_jk Error">
+<meta property="og:url" content="http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-1/">
 
 
-  <meta property="og:description" content="For That.">
-
-
-
+  <meta property="og:description" content="Ubuntu mod_jk Error">
 
 
 
+
+
+
+
+  <meta property="article:published_time" content="2021-01-27T00:00:00+09:00">
 
 
 
@@ -41,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/categories/">
+<link rel="canonical" href="http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-1/">
 
 
 
@@ -109,7 +113,7 @@
 
   </head>
 
-  <body class="layout--categories">
+  <body class="layout--single wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -291,67 +295,274 @@
 
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title">Posts by Category</h1>
-    
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Ubuntu mod_jk Error">
+    <meta itemprop="description" content="Ubuntu mod_jk Error">
+    <meta itemprop="datePublished" content="2021-01-27T00:00:00+09:00">
     
 
-
-
-
-
-<ul class="taxonomy__index">
-  
-    
+    <div class="page__inner-wrap">
       
-        <li>
-          <a href="#c">
-            <strong>C</strong> <span class="taxonomy__count">2</span>
-          </a>
-        </li>
-      
-    
-      
-    
-      
-        <li>
-          <a href="#linux">
-            <strong>Linux</strong> <span class="taxonomy__count">2</span>
-          </a>
-        </li>
-      
-    
-  
-    
-      
-    
-      
-        <li>
-          <a href="#python">
-            <strong>Python</strong> <span class="taxonomy__count">1</span>
-          </a>
-        </li>
-      
-    
-      
-    
-  
-</ul>
-
-
-
-  
-    
-      <section id="c" class="taxonomy__section">
-        <h2 class="archive__subtitle">C</h2>
-        <div class="entries-list">
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Ubuntu mod_jk Error
+</h1>
           
-            
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-27T00:00:00+09:00">January 27, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="ubuntu-mod_jk-error">Ubuntu mod_jk Error</h1>
+
+<p>Tomcat과 Apache를 연결시켜주는 다리 역할을 하는 mod_jk에서 계속된 오류가 발생하여,</p>
+
+<p>결국 포기하고 Tomcat만을 돌리다가 주소에서 :8080을 떼어내고 싶어 /var/log/apache2/mod_jk.log 파일을 분석하던 중 다음의 에러를 발견할 수 있었다.</p>
+
+<p><img src="/assets/images/linux/error/mod_jk/error-1.png" alt="mod_jk.log" /></p>
+
+<p>에러는 다음과 같았으며,</p>
+
+<blockquote>
+  <p>Could not find worker with name ‘ajp13_worker’ in uri map post processing.</p>
+</blockquote>
+
+<p>이에 대해 인터넷에 검색하던 중 다음의 게시글을 찾을 수 있었다.</p>
+
+<p><a href="https://stackoverflow.com/questions/59035732/could-not-find-worker-with-name-ajp13-worker" title="Stack Overflow">Stack Overflow</a></p>
+
+<p>해결방법은 /etc/apache2/mods-available 내에 있는 httpd-jk.conf 파일을 jk.conf 파일로 변경한 후, 원본 파일인 /etc/apache2/mods-available/jk.conf를 대상 파일인 /etc/libapache2-mod-jk/httpd-jk.conf에 대해 심볼릭 링크 파일을 생성해주면 된다.</p>
+
+<p>예전에는 이러한 과정을 거치지 않았던 것 같은데…</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#apache" class="page__taxonomy-item" rel="tag">Apache</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#server" class="page__taxonomy-item" rel="tag">Server</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#tomcat" class="page__taxonomy-item" rel="tag">Tomcat</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#ubuntu" class="page__taxonomy-item" rel="tag">Ubuntu</a>
+    
+    </span>
+  </p>
 
 
 
-<div class="list__item">
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2021-01-27T00:00:00+09:00">January 27, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Ubuntu+mod_jk+Error%20http%3A%2F%2Flocalhost%3A4000%2Flinux%2FUbuntu-Mod-Jk-Error-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flinux%2FUbuntu-Mod-Jk-Error-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flinux%2FUbuntu-Mod-Jk-Error-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/python/Problem-Solving-in-C-2/" class="pagination--pager" title="Python 과제: 입력 및 출력
+">이전</a>
+    
+    
+      <a href="/linux/Ubuntu-Mod-Jk-Error-Side-1/" class="pagination--pager" title="Ubuntu mod_jk Error 번외
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">참고</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/linux/Ubuntu-Mod-Jk-Error-Side-1/" rel="permalink">Ubuntu mod_jk Error 번외
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-27T00:00:00+09:00">January 27, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Ubuntu mod_jk Error 번외편
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/python/Problem-Solving-in-C-2/" rel="permalink">Python 과제: 입력 및 출력
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-12-29T00:00:00+09:00">December 29, 2020</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문제
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -366,7 +577,7 @@
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         <time datetime="2020-12-21T00:00:00+09:00">December 21, 2020</time>
       </span>
     
@@ -378,7 +589,7 @@
       
 
       <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           2 분 소요
         
@@ -393,12 +604,12 @@
   </article>
 </div>
 
+        
           
-            
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -413,7 +624,7 @@
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         <time datetime="2020-10-27T00:00:00+09:00">October 27, 2020</time>
       </span>
     
@@ -425,7 +636,7 @@
       
 
       <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           최대 1 분 소요
         
@@ -446,185 +657,13 @@ void gotoxy(int x, int y)
   </article>
 </div>
 
-          
-        </div>
-        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
-      </section>
-    
-  
-    
-  
-    
-      <section id="linux" class="taxonomy__section">
-        <h2 class="archive__subtitle">Linux</h2>
-        <div class="entries-list">
-          
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/linux/Ubuntu-Mod-Jk-Error-Side-1/" rel="permalink">Ubuntu mod_jk Error 번외
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-01-27T00:00:00+09:00">January 27, 2021</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Ubuntu mod_jk Error 번외편
-
-</p>
-  </article>
+      </div>
+    </div>
+  
+  
 </div>
 
-          
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/linux/Ubuntu-Mod-Jk-Error-1/" rel="permalink">Ubuntu mod_jk Error
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-01-27T00:00:00+09:00">January 27, 2021</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          최대 1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Ubuntu mod_jk Error
-
-</p>
-  </article>
-</div>
-
-          
-        </div>
-        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
-      </section>
-    
-  
-
-  
-    
-  
-    
-      <section id="python" class="taxonomy__section">
-        <h2 class="archive__subtitle">Python</h2>
-        <div class="entries-list">
-          
-            
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/python/Problem-Solving-in-C-2/" rel="permalink">Python 과제: 입력 및 출력
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-12-29T00:00:00+09:00">December 29, 2020</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">문제
-
-</p>
-  </article>
-</div>
-
-          
-        </div>
-        <a href="#page-title" class="back-to-top">맨 위로 이동 &uarr;</a>
-      </section>
-    
-  
-    
-  
-
-
-  </div>
-</div>
     </div>
 
     
@@ -683,6 +722,25 @@ void gotoxy(int x, int y)
 <script src="/assets/js/lunr/lunr-en.js"></script>
 
 
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-1/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/linux/Ubuntu Mod-Jk Error #1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://enfycius.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
 
 
 

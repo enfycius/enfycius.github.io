@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>gotoxy(), clrscr(), getch(), and getche() functions for GCC Linux. - JH’s</title>
-<meta name="description" content="gotoxy() for GCC Linux // gotoxy() function definition void gotoxy(int x, int y) {   printf(&quot;%c[%d;%df&quot;, 0x1B, y, x); }">
+<!-- begin _includes/seo.html --><title>Ubuntu mod_jk Error 번외 - JH’s</title>
+<meta name="description" content="Ubuntu mod_jk Error 번외편">
 
 
   <meta name="author" content="Jonghyeok Kim">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="JH's">
-<meta property="og:title" content="gotoxy(), clrscr(), getch(), and getche() functions for GCC Linux.">
-<meta property="og:url" content="http://localhost:4000/c/FromTurboCToGCC/">
+<meta property="og:title" content="Ubuntu mod_jk Error 번외">
+<meta property="og:url" content="http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-Side-1/">
 
 
-  <meta property="og:description" content="gotoxy() for GCC Linux // gotoxy() function definition void gotoxy(int x, int y) {   printf(&quot;%c[%d;%df&quot;, 0x1B, y, x); }">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2020-10-27T00:00:00+09:00">
+  <meta property="og:description" content="Ubuntu mod_jk Error 번외편">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2021-01-27T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/c/FromTurboCToGCC/">
+
+<link rel="canonical" href="http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-Side-1/">
 
 
 
@@ -296,15 +296,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="gotoxy(), clrscr(), getch(), and getche() functions for GCC Linux.">
-    <meta itemprop="description" content="gotoxy() for GCC Linux// gotoxy() function definitionvoid gotoxy(int x, int y){  printf(&quot;%c[%d;%df&quot;, 0x1B, y, x);}">
-    <meta itemprop="datePublished" content="2020-10-27T00:00:00+09:00">
+    <meta itemprop="headline" content="Ubuntu mod_jk Error 번외">
+    <meta itemprop="description" content="Ubuntu mod_jk Error 번외편">
+    <meta itemprop="datePublished" content="2021-01-27T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">gotoxy(), clrscr(), getch(), and getche() functions for GCC Linux.
+          <h1 id="page-title" class="page__title" itemprop="headline">Ubuntu mod_jk Error 번외
 </h1>
           
 
@@ -313,7 +313,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-10-27T00:00:00+09:00">October 27, 2020</time>
+        <time datetime="2021-01-27T00:00:00+09:00">January 27, 2021</time>
       </span>
     
 
@@ -326,7 +326,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -338,114 +338,71 @@
 
       <section class="page__content" itemprop="text">
         
-        <h1 id="gotoxy-for-gcc-linux">gotoxy() for GCC Linux</h1>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// gotoxy() function definition</span>
-<span class="kt">void</span> <span class="nf">gotoxy</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"%c[%d;%df"</span><span class="p">,</span> <span class="mh">0x1B</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
-<span class="p">}</span>
+        <h1 id="ubuntu-mod_jk-error-번외편">Ubuntu mod_jk Error 번외편</h1>
+
+<p>2일 전 그러니까 25일 날 The Stellar Project Beta v1.0이 출시되었다.
+(The Stellar Project는 Open Source Project이다. 이에 관심이 있다면 아래 링크에 접속해보자.)</p>
+
+<p>Link: <a href="https://github.com/psgstellar/Stellar" title="The Stellar Project Link">Stellar</a></p>
+
+<p>Github에서 Beta 버전을 마무리하고, 서버 구축을 진행하던 중 Apache 서버와 Tomcat 사이에 다리를 놓아주는 mod_jk가 말을 듣지 않아 한참을 고생하다,</p>
+
+<p>이 상황을 받아들이려 했으나 war 파일을 올리고 나서도 주소 끝에 :8080가 붙을 것을 생각하니 자꾸만 마음에 걸려서 이를 해결하고자 노력하였고, 결국 상황이 더욱 더 악화되고야 말았다.</p>
+
+<p>예전에 동일한 방식으로 mod_jk를 설정한 경험이 있었기에 나는 이것의 문제가 아니라 생각하였고, 문제는 apache라 생각하여 이를 재설치하기 위해 삭제 과정을 밟게 되었다.</p>
+
+<p>그런데 그 과정에서 그만 패키지와 관련된 파일까지 전부 삭제하고 만 것이다.</p>
+
+<p>나는 이것을 다음 명령어를 입력하고나서야 알 수 있었다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
 </code></pre></div></div>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
-</span>
-<span class="c1">// gotoxy() function definition</span>
-<span class="kt">void</span> <span class="nf">gotoxy</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"%c[%d;%df"</span><span class="p">,</span> <span class="mh">0x1B</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
-<span class="p">}</span>
+<p>그래… 너무도 뒤늦게 알아차린 탓에 결국 내가 할 수 있는 일은 많지 않았다.</p>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>
-    <span class="n">gotoxy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span> <span class="c1">// move cursor position</span>
+<p>그 중간 과정이라도 조금이나마 기억해낼 수 있었다면, 역 발상을 통해서라도 뭐라도 했을텐데 말이다…</p>
 
-    <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!!!"</span><span class="p">);</span> <span class="c1">// print message</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<blockquote>
+  <p>그렇지만 어쩌겠는가 다 까먹은것을…</p>
+</blockquote>
 
-<h1 id="clrscr-for-gcc-linux">clrscr() for GCC Linux</h1>
+<p>나는 결국 Ubuntu Server를 재설치하기 위해 멀고도 먼 아빠 사무실에 가게 되었는데, 가서도 서버 내 파일들과 기존 Mysql 데이터, 설정들을 백업해야 했기 때문에 상당히 오랜 시간이 걸렸다.</p>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// clrscr() function definition</span>
-<span class="kt">void</span> <span class="nf">clsrscr</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">system</span><span class="p">(</span><span class="s">"clear"</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<p>그렇게 모든 설정을 마치고 집에 돌아와 mod_jk를 다시 시도해보았지만 똑같이 실패하여 결국 Tomcat만 설정해둔 상태에서 war 파일을 올리게 되었다.</p>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
-</span>
-<span class="c1">// clrscr() function definition</span>
-<span class="kt">void</span> <span class="nf">clrscr</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">system</span><span class="p">(</span><span class="s">"clear"</span><span class="p">);</span>
-<span class="p">}</span>
+<p>(아무래도 여러 날 동안 고생했던 프로젝트다보니 최대한 빠르게 베타 버전을 올리고 싶었나보다…)</p>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-  <span class="n">clrscr</span><span class="p">();</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!!!"</span><span class="p">);</span>
+<p>마음이 급하였는지 파일명을 ROOT.war로 설정하지도 않고 이클립스에서 갓 뽑아낸 이름 그대로 Stellar.war 파일을 올리게 되었다.</p>
 
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<p>더군다나 ROOT.war로 바꾸고 나서도 기존 ROOT 디렉토리 내에 넣어버렸다…</p>
 
-<h1 id="getch-and-getche-for-gcc-linux">getch() and getche() for GCC Linux</h1>
+<p>마침내 모든 것을 정상적으로 설정하고 나서야 드디어.. 처음으로 The Stellar Project의 Beta 버전을 확인할 수 있었다..</p>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;termios.h&gt;
-#include &lt;stdio.h&gt;
-</span>
-<span class="k">static</span> <span class="k">struct</span> <span class="n">termios</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">;</span>
+<p>너무 기쁜 나머지 곧바로 PSG 단톡방에 사이트 소개글과 지금까지 고생했던 분들의 명단을 적기 시작했다.</p>
 
-<span class="kt">void</span> <span class="nf">initTermios</span><span class="p">(</span><span class="kt">int</span> <span class="n">echo</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">tcgetattr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">old</span><span class="p">);</span>
-  <span class="n">new</span> <span class="o">=</span> <span class="n">old</span><span class="p">;</span>
-  <span class="n">new</span><span class="p">.</span><span class="n">c_lflag</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="n">ICANON</span><span class="p">;</span>
-  <span class="n">new</span><span class="p">.</span><span class="n">c_lflag</span> <span class="o">&amp;=</span> <span class="n">echo</span> <span class="o">?</span> <span class="n">ECHO</span> <span class="o">:</span> <span class="o">~</span><span class="n">ECHO</span><span class="p">;</span>
-  <span class="n">tcsetattr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">TCSANOW</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">new</span><span class="p">);</span>
-<span class="p">}</span>
+<p>(내가 개발할 수 있었던 것은 내가 잘나서가 아니라 같이 개발에 참여하신 분들 덕분이라 생각했기 때문이다.)</p>
 
-<span class="kt">void</span> <span class="nf">resetTermios</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">tcsetattr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">TCSANOW</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">old</span><span class="p">);</span>
-<span class="p">}</span>
+<p>모든 소개 글을 올리고 나서 맨 처음 회원가입을 해주신 분은 정등x님이었다.</p>
 
-<span class="kt">char</span> <span class="nf">getch_</span><span class="p">(</span><span class="kt">int</span> <span class="n">echo</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">char</span> <span class="n">ch</span><span class="p">;</span>
-  <span class="n">initTermios</span><span class="p">(</span><span class="n">echo</span><span class="p">);</span>
-  <span class="n">ch</span> <span class="o">=</span> <span class="n">getchar</span><span class="p">();</span>
-  <span class="n">resetTermios</span><span class="p">();</span>
+<p>힘들게 개발을 진행해서 그런지 맨 처음 회원가입 해주신 정등x님께 감사한 마음이 들었다.</p>
 
-  <span class="k">return</span> <span class="n">ch</span><span class="p">;</span>
-<span class="p">}</span>
+<p>더군다나 먼저 사용해보시면서 오류를 보고해주신 덕분에 이후 다른 분들께서 원활히 사용하실 수 있게 해주셨다.</p>
 
-<span class="kt">char</span> <span class="nf">getch</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="k">return</span> <span class="n">getch_</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-<span class="p">}</span>
+<p>암튼 보고된 오류에 대해서 나는 얼른 어느 부분에서 에러가 발생하는지를 확인하였고, script 내의 오타로 인하여 발생한 문제임을 확인하게 되었다.</p>
 
-<span class="kt">char</span> <span class="nf">getche</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="k">return</span> <span class="n">getch_</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<span class="p">}</span>
+<p>이런 류의 오타였다.</p>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"(getche example) Please enter a character: "</span><span class="p">);</span>
-  <span class="n">c</span> <span class="o">=</span> <span class="n">getche</span><span class="p">();</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You entered: %c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"(getch example) Please enter a character: "</span><span class="p">);</span>
-  <span class="n">c</span> <span class="o">=</span> <span class="n">getch</span><span class="p">();</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You entered: %c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+<p>원본 코드는 다음의 주소에서 확인할 수 있다.</p>
 
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<p><a href="https://github.com/psgstellar/Stellar/blob/7802a47bf1c4d1de815db9c173abe3bf973f2853/Stellar/src/main/webapp/WEB-INF/jsp/member/settings.jsp#L86-L92" title="Code">Code</a></p>
 
-<p>출처: <a href="https://www.includehelp.com/c-programs/gotoxy-clrscr-getch-getche-for-gcc-linux.aspx">includehelp</a></p>
+<p>해당 코드에서 나는</p>
 
+<p>hotfix 브런치를 생성하여 해당 오류에 대한 해결을 시작하였다</p>
+
+<p>그래서 PSG 팀 내에서 사이트를 소개할때도, 다른 곳에 PSG 팀을 홍보할 때조차도 주소 끝의 :8080은 떼어낼 수가 없었다.</p>
+
+<p>그런데 오늘 그래도 한번 이를 끝까지 해결해보고 싶어 인터넷을 한참을 뒤지던 중 다음의 글을 접할 수 있었다.</p>
 
         
       </section>
@@ -466,7 +423,23 @@
     
       
       
-      <a href="/tags/#programming" class="page__taxonomy-item" rel="tag">Programming</a>
+      <a href="/tags/#apache" class="page__taxonomy-item" rel="tag">Apache</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#server" class="page__taxonomy-item" rel="tag">Server</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#tomcat" class="page__taxonomy-item" rel="tag">Tomcat</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#ubuntu" class="page__taxonomy-item" rel="tag">Ubuntu</a>
     
     </span>
   </p>
@@ -487,14 +460,14 @@
     
       
       
-      <a href="/categories/#c" class="page__taxonomy-item" rel="tag">C</a>
+      <a href="/categories/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-10-27T00:00:00+09:00">October 27, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2021-01-27T00:00:00+09:00">January 27, 2021</time></p>
 
 
       </footer>
@@ -504,22 +477,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=gotoxy%28%29%2C+clrscr%28%29%2C+getch%28%29%2C+and+getche%28%29+functions+for+GCC+Linux.%20http%3A%2F%2Flocalhost%3A4000%2Fc%2FFromTurboCToGCC%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Ubuntu+mod_jk+Error+%EB%B2%88%EC%99%B8%20http%3A%2F%2Flocalhost%3A4000%2Flinux%2FUbuntu-Mod-Jk-Error-Side-1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fc%2FFromTurboCToGCC%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flinux%2FUbuntu-Mod-Jk-Error-Side-1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fc%2FFromTurboCToGCC%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flinux%2FUbuntu-Mod-Jk-Error-Side-1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">이전</a>
+      <a href="/linux/Ubuntu-Mod-Jk-Error-1/" class="pagination--pager" title="Ubuntu mod_jk Error
+">이전</a>
     
     
-      <a href="/c/Problem-Solving-in-C-1/" class="pagination--pager" title="C언어 과제: 평균 구하는 함수 작성
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -533,53 +506,6 @@
     <div class="page__related">
       <h4 class="page__related-title">참고</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/linux/Ubuntu-Mod-Jk-Error-Side-1/" rel="permalink">Ubuntu mod_jk Error 번외
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-01-27T00:00:00+09:00">January 27, 2021</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Ubuntu mod_jk Error 번외편
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -661,7 +587,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          5 분 소요
+          4 분 소요
         
       </span>
     
@@ -708,7 +634,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          3 분 소요
+          2 분 소요
         
       </span>
     
@@ -716,6 +642,59 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">문제
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/c/FromTurboCToGCC/" rel="permalink">gotoxy(), clrscr(), getch(), and getche() functions for GCC Linux.
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-10-27T00:00:00+09:00">October 27, 2020</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">gotoxy() for GCC Linux
+// gotoxy() function definition
+void gotoxy(int x, int y)
+{
+  printf("%c[%d;%df", 0x1B, y, x);
+}
+
 
 </p>
   </article>
@@ -791,8 +770,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/c/FromTurboCToGCC/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/c/FromTurboCToGCC"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-Side-1/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/linux/Ubuntu Mod-Jk Error-Side #1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

@@ -13,6 +13,14 @@
 <lastmod>2020-12-29T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-1/</loc>
+<lastmod>2021-01-27T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-Side-1/</loc>
+<lastmod>2021-01-27T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/categories/C</loc>
 </url>
 <url>
@@ -26,6 +34,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/Linux</loc>
 </url>
 <url>
 <loc>http://localhost:4000/categories/physics</loc>

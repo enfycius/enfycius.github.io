@@ -16,4 +16,16 @@ var store = [{
         "tags": ["Programming","Python"],
         "url": "http://localhost:4000/python/Problem-Solving-in-C-2/",
         "teaser": null
+      },{
+        "title": "Ubuntu mod_jk Error",
+        "excerpt":"Ubuntu mod_jk Error   Tomcat과 Apache를 연결시켜주는 다리 역할을 하는 mod_jk에서 계속된 오류가 발생하여,   결국 포기하고 Tomcat만을 돌리다가 주소에서 :8080을 떼어내고 싶어 /var/log/apache2/mod_jk.log 파일을 분석하던 중 다음의 에러를 발견할 수 있었다.      에러는 다음과 같았으며,      Could not find worker with name ‘ajp13_worker’ in uri map post processing.    이에 대해 인터넷에 검색하던 중 다음의 게시글을 찾을 수 있었다.   Stack Overflow   해결방법은 /etc/apache2/mods-available 내에 있는 httpd-jk.conf 파일을 jk.conf 파일로 변경한 후, 원본 파일인 /etc/apache2/mods-available/jk.conf를 대상 파일인 /etc/libapache2-mod-jk/httpd-jk.conf에 대해 심볼릭 링크 파일을 생성해주면 된다.   예전에는 이러한 과정을 거치지 않았던 것 같은데…  ","categories": ["Linux"],
+        "tags": ["Linux","Ubuntu","Apache","Server","Tomcat"],
+        "url": "http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-1/",
+        "teaser": null
+      },{
+        "title": "Ubuntu mod_jk Error 번외",
+        "excerpt":"Ubuntu mod_jk Error 번외편   2일 전 그러니까 25일 날 The Stellar Project Beta v1.0이 출시되었다. (The Stellar Project는 Open Source Project이다. 이에 관심이 있다면 아래 링크에 접속해보자.)   Link: Stellar   Github에서 Beta 버전을 마무리하고, 서버 구축을 진행하던 중 Apache 서버와 Tomcat 사이에 다리를 놓아주는 mod_jk가 말을 듣지 않아 한참을 고생하다,   이 상황을 받아들이려 했으나 war 파일을 올리고 나서도 주소 끝에 :8080가 붙을 것을 생각하니 자꾸만 마음에 걸려서 이를 해결하고자 노력하였고, 결국 상황이 더욱 더 악화되고야 말았다.   예전에 동일한 방식으로 mod_jk를 설정한 경험이 있었기에 나는 이것의 문제가 아니라 생각하였고, 문제는 apache라 생각하여 이를 재설치하기 위해 삭제 과정을 밟게 되었다.   그런데 그 과정에서 그만 패키지와 관련된 파일까지 전부 삭제하고 만 것이다.   나는 이것을 다음 명령어를 입력하고나서야 알 수 있었다.   sudo apt-get update   그래… 너무도 뒤늦게 알아차린 탓에 결국 내가 할 수 있는 일은 많지 않았다.   그 중간 과정이라도 조금이나마 기억해낼 수 있었다면, 역 발상을 통해서라도 뭐라도 했을텐데 말이다…      그렇지만 어쩌겠는가 다 까먹은것을…    나는 결국 Ubuntu Server를 재설치하기 위해 멀고도 먼 아빠 사무실에 가게 되었는데, 가서도 서버 내 파일들과 기존 Mysql 데이터, 설정들을 백업해야 했기 때문에 상당히 오랜 시간이 걸렸다.   그렇게 모든 설정을 마치고 집에 돌아와 mod_jk를 다시 시도해보았지만 똑같이 실패하여 결국 Tomcat만 설정해둔 상태에서 war 파일을 올리게 되었다.   (아무래도 여러 날 동안 고생했던 프로젝트다보니 최대한 빠르게 베타 버전을 올리고 싶었나보다…)   마음이 급하였는지 파일명을 ROOT.war로 설정하지도 않고 이클립스에서 갓 뽑아낸 이름 그대로 Stellar.war 파일을 올리게 되었다.   더군다나 ROOT.war로 바꾸고 나서도 기존 ROOT 디렉토리 내에 넣어버렸다…   마침내 모든 것을 정상적으로 설정하고 나서야 드디어.. 처음으로 The Stellar Project의 Beta 버전을 확인할 수 있었다..   너무 기쁜 나머지 곧바로 PSG 단톡방에 사이트 소개글과 지금까지 고생했던 분들의 명단을 적기 시작했다.   (내가 개발할 수 있었던 것은 내가 잘나서가 아니라 같이 개발에 참여하신 분들 덕분이라 생각했기 때문이다.)   모든 소개 글을 올리고 나서 맨 처음 회원가입을 해주신 분은 정등x님이었다.   힘들게 개발을 진행해서 그런지 맨 처음 회원가입 해주신 정등x님께 감사한 마음이 들었다.   더군다나 먼저 사용해보시면서 오류를 보고해주신 덕분에 이후 다른 분들께서 원활히 사용하실 수 있게 해주셨다.   암튼 보고된 오류에 대해서 나는 얼른 어느 부분에서 에러가 발생하는지를 확인하였고, script 내의 오타로 인하여 발생한 문제임을 확인하게 되었다.   이런 류의 오타였다.   원본 코드는 다음의 주소에서 확인할 수 있다.   Code   해당 코드에서 나는   hotfix 브런치를 생성하여 해당 오류에 대한 해결을 시작하였다   그래서 PSG 팀 내에서 사이트를 소개할때도, 다른 곳에 PSG 팀을 홍보할 때조차도 주소 끝의 :8080은 떼어낼 수가 없었다.   그런데 오늘 그래도 한번 이를 끝까지 해결해보고 싶어 인터넷을 한참을 뒤지던 중 다음의 글을 접할 수 있었다.  ","categories": ["Linux"],
+        "tags": ["Linux","Ubuntu","Apache","Server","Tomcat"],
+        "url": "http://localhost:4000/linux/Ubuntu-Mod-Jk-Error-Side-1/",
+        "teaser": null
       }]
