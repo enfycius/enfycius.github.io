@@ -2,7 +2,7 @@
 main:
 
   - title: "PSG"
-    url: https://psg.or.kr/
+    url: http://psg.or.kr/
 
   - title: "Categories"
     url: /categories/
