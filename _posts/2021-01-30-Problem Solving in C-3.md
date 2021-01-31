@@ -1,0 +1,111 @@
+---
+title: "C언어 자주 범할 수 있는 실수 #1"
+
+classes: wide
+
+categories:
+  - C
+tags:
+  - Programming
+  - Coding
+---
+
+# 질문
+
+상위 10%까지 A, 30%까지는 B ... 이런식으로 나오게끔 작성하고 싶은데, 의도한 대로 결과가 나오지 않습니다.
+
+## 문제 코드
+
+```c
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+    int ranking = 0;
+    int whole = 0;
+    int score = 0;
+
+    printf("등수?");
+    scanf_s("%d", &ranking);
+
+    printf("전체 인원수? ");
+    scanf_s("%d", &whole);
+
+    score = ranking / whole * 100;
+
+    if(score <= 10)
+        printf("A\n");
+    else if(10 <= score <= 30)
+        printf("B\n");
+    else if(30 <= score <= 60)
+        printf("C\n");
+    else if(60 <= score <= 90)
+        printf("D\n");
+    else
+        printf("F\n");
+
+    return 0;
+}
+```
+
+# 답변
+
+Python의 경우와는 달리 C에서는 다음의 조건을 이어지는 문법으로 만족시킬 수 없습니다.
+
+## 조건
+
+> score는 10 이상이고 30 이하이다.
+
+```c
+10 <= score <= 30
+```
+
+---
+
+그러므로 C에서 위의 조건을 만족시키기 위해서는 다음과 같은 조건식을 구성해야 합니다.
+
+```c
+10 <= score && score <= 30
+```
+
+---
+
+또한, 이 경우에 단축평가(short-circuit)를 이용하면 관계 연산자와 논리 연산자의 혼용없이 조건식을 간결하게 구성할 수도 있습니다.
+
+다음은 이러한 단축평가의 개념을 반영한 코드입니다.
+
+```c
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+    int ranking = 0;
+    int whole = 0;
+    int score = 0;
+
+    printf("등수?");
+    scanf_s("%d", &ranking);
+
+    printf("전체 인원수? ");
+    scanf_s("%d", &whole);
+
+    score = ranking / whole * 100;
+
+    if(score <= 10)
+        printf("A\n");
+    else if(score <= 30)
+        printf("B\n");
+    else if(score <= 60)
+        printf("C\n");
+    else if(score <= 90)
+        printf("D\n");
+    else
+        printf("F\n");
+
+    return 0;
+}
+```
