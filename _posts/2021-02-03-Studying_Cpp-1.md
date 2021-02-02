@@ -59,6 +59,8 @@ int main(void)
 
 ## 실행의 예
 
+![Example](/assets/images/c++/studying/cpp_studying_1.png)
+
 위의 실행결과에서 salary 내역은 일반 영업직 직원의 급여 계산결과이며(기본금에 상여금을 더한 결과), risk pay가 위험수당에 속한다.
 
 ### EmployeeManager4.cpp 코드
