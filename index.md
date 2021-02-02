@@ -36,6 +36,7 @@ author_profile: true
 Techs that I've used at least once
 
 ![Stack](https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white)
+![Stack](https://img.shields.io/badge/Ruby-FF4040?style=flat-square&logo=Ruby&logoColor=white)
 ![Stack](https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white)
 ![Stack](https://img.shields.io/badge/CSharp-1572B6?style=flat-square&logo=C%20Sharp&logoColor=white)
 ![Stack](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)
@@ -52,7 +53,7 @@ Techs that I've used at least once
 
 ### :mailbox_with_mail: Contacts
 
-[![Badge](http://img.shields.io/badge/-Instagram-white?style=flat&logo=Instagram&link=https://instagram.com/alpox.dev/)](https://www.instagram.com/___dev00/) [![Badge](http://img.shields.io/badge/-Tech%20Blog-655ced?style=flat&logo=github&link=https://alpox.kr)](https://enfycius.github.io/)
+[![Badge](http://img.shields.io/badge/-Instagram-white?style=flat&logo=Instagram&link=https://instagram.com/alpox.dev/)](https://www.instagram.com/___dev00/) [![Badge](http://img.shields.io/badge/-Tech%20Blog-FF4040?style=flat&logo=github&link=https://alpox.kr)](https://enfycius.github.io/) [![Badge](http://img.shields.io/badge/-Github-00BFBF?style=flat&logo=github&link=https://alpox.kr)](https://github.com/enfycius/) 
 
 ### :information_desk_person: Info
 
