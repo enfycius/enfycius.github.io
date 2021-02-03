@@ -59,6 +59,8 @@ void ChangePhoneNum(NameCard* pcard, char* phone);
 
 더불어 저장의 형태는 NameCard 구조체 변수의 주소 값이어야 하며, 위에서 언급하는 특정 이름은 임의로 지정하되 서로 다른 이름으로 저장하기로 하자.
 
+# 해결
+
 ## ArrayList.h
 
 ```c
