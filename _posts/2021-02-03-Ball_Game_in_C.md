@@ -5,7 +5,10 @@ classes: wide
 
 categories:
   - C
+  - Algorithms
 tags:
+  - C
+  - Algorithms
   - Programming
   - Coding
 ---
