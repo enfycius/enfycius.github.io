@@ -1,5 +1,5 @@
 ---
-title: "C언어 야구 게임"
+title: "C 야구 게임"
 
 classes: wide
 
