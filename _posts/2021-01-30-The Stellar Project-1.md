@@ -14,6 +14,8 @@ tags:
   - Programming
   - Coding
   - PSG
+
+toc: true
 ---
 
 # The Stellar Project

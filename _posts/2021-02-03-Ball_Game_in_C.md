@@ -11,6 +11,8 @@ tags:
   - Algorithms
   - Programming
   - Coding
+
+toc: true
 ---
 
 # 야구 게임(숫자 맞추기 게임과 비슷)

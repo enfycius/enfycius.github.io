@@ -7,6 +7,8 @@ categories:
   - C
 tags:
   - Programming
+
+toc: true
 ---
 
 
