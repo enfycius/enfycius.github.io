@@ -135,9 +135,11 @@ int main(void) {
 
 또한, 아직 Early Binding(Static Binding)과 Late Binding(Dynamic Binding)에 대해 이해되지 않을 수 있다.
 
-그래서 필자가 여러분의 이해를 돕고자 다음의 필자의 생각을 준비해보았다.
+그래서 필자가 위 예제와 관련하여 여러분의 이해를 돕고자 다음의 필자의 생각을 준비해보았다.
 
 > Early Binding(Static Binding)의 경우에는 컴파일러가 포인터의 자료형에 집중한다면, Late Binding(Dynamic Binding)의 경우에는 컴파일러가 포인터의 자료형이 아닌 그것이 가지고 있는 값에 집중한다.
+
+이는 절대적인 진리는 아니며, 위의 예제와 같이 상속 관계에 놓여있는 클래스에 대해서 활용할 수 있는 생각임을 밝혀둔다.
 
 # 참고문헌
 
