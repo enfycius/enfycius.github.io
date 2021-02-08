@@ -21,7 +21,7 @@ toc: true
 
 바로 **"main 함수의 크기"**이다.
 
-main 함수의 크기는 몇 일까?
+main 함수의 크기는 얼마일까?
 
 ## 코드(C)
 
@@ -40,7 +40,7 @@ int main(void) {
 
 ![C](/assets/images/c/studying/c_studying_1.png)
 
-C는 4Byte,
+C에서는 4Byte,
 
 ## 코드(C++)
 
@@ -61,6 +61,6 @@ int main(void) {
 
 ![C++](/assets/images/c++/studying/cpp_studying_3.png)
 
-C++도 4Byte이다.
+C++에서도 4Byte이다.
 
 
