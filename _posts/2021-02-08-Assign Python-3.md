@@ -1,5 +1,5 @@
 ---
-title: "Python 과제: Print Dictionaries in List According to Condition"
+title: "Python 과제: Differently print contents of Dictionaries in List by conditions"
 
 classes: wide
 
