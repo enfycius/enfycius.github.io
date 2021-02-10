@@ -1,5 +1,5 @@
 ---
-title: "OpenCV Install & Settings for Mac"
+title: "OpenCV Installing & Settings for Mac"
 
 classes: wide
 
