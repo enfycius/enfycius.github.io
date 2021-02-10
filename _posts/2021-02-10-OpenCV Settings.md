@@ -47,7 +47,7 @@ pkg-config --cflags --libs opencv4
 
 ## Xcode Header Search Paths 설정할 때
 
-또한 위 블로그 포스팅에서는 다음의 경로만 추가해주었는데,
+또한 위 블로그 포스팅에서는 다음의 경로만 추가해주었다.
 
 ```shell
 /usr/local/include
