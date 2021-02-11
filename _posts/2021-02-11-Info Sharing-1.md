@@ -15,7 +15,7 @@ toc: true
 
 # 내용
 
-급할 때 Github에서 코드를 수정하는 것 대신에 VSCODE Online Editor로 즉각 수정해보자.
+급할 때 Github에서 코드를 수정하는 것 대신에 VSCODE Online Editor로 즉시 수정해보자.
 
 이를 위해 코드 수정을 원하는 Github Repository 접속 후 주소창에서 github.com을 github1s.com으로 변경하여 검색한다.
 
