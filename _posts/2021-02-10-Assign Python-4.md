@@ -5,7 +5,7 @@ classes: wide
 
 categories:
   - Python
-  - Algorithm
+  - Algorithms
 tags:
   - Programming
   - Implementation
