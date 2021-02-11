@@ -101,7 +101,9 @@ px
 
 ![terminal-09](/assets/images/reversing/studying/reversing-01-09.png)
 
-문자열 student가 있는 위치로 커서가 이동했음을 확인할 수 있다.
+student와 다른 문자열들로 미루어보아 우리가 수정하고자하는 문자열의 메모리 주소에 위치해 있음을 확인할 수 있다.  
+
+또한, 문자열 student가 있는 위치로 커서가 이동한 것도 확인해볼 수 있다.
 
 이제 해당 내용을 변경하기 위해 읽기-쓰기 모드로 전환하자.
 
