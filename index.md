@@ -33,7 +33,7 @@ author_profile: true
 - [Haesung Notice App](https://play.google.com/store/apps/details?id=com.jhspt.recycleproj "Recycle Project")
 - [PSG Website](http://psg.or.kr/ "Stellar Project")
 
-### :boom: Projects
+### :boom: Team Projects
 
 #### [The Stellar Project](https://github.com/psgstellar/Stellar "The Stellar Project")
 
@@ -65,6 +65,14 @@ author_profile: true
 ![Open](https://img.shields.io/github/issues/psgstellar/Booung) ![Close](https://img.shields.io/github/issues-closed/psgstellar/Booung) ![Open_P](https://img.shields.io/github/issues-pr/psgstellar/Booung) ![Close_P](https://img.shields.io/github/issues-pr-closed/psgstellar/Booung)
  
 ![Contributor](https://img.shields.io/github/contributors/psgstellar/Booung) ![Activity](https://img.shields.io/github/commit-activity/m/psgstellar/Booung) ![Last](https://img.shields.io/github/last-commit/psgstellar/Booung/development)
+
+### :fire: Side Projects
+
+#### [The Push-Me Project](https://github.com/psgstellar/Demeter "The Push-Me Project")
+
+![Open](https://img.shields.io/github/issues/enfycius/Push-Me) ![Close](https://img.shields.io/github/issues-closed/enfycius/Push-Me) ![Open_P](https://img.shields.io/github/issues-pr/enfycius/Push-Me) ![Close_P](https://img.shields.io/github/issues-pr-closed/enfycius/Push-Me) 
+ 
+![Contributor](https://img.shields.io/github/contributors/enfycius/Push-Me) ![Activity](https://img.shields.io/github/commit-activity/m/enfycius/Push-Me) ![Last](https://img.shields.io/github/last-commit/enfycius/Push-Me/development)
 
 ### :star: Interest
 
