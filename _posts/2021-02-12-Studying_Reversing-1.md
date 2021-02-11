@@ -124,7 +124,7 @@ w test\x00
 ![terminal-11](/assets/images/reversing/studying/reversing-01-11.png)
 
 
-> C/C++에서는 문자열의 끝을 NULL 문자로 인식하므로 \x00 삽입을 잊어서는 안된다.
+> C/C++에서는 문자열의 끝을 NULL 문자로 식별하므로 \x00 삽입을 잊어서는 안된다.
 
 마지막으로 Radare2를 종료한 후,
 
