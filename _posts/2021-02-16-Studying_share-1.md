@@ -93,7 +93,7 @@ mkdir /var/lib/sharelatex/mongodb
 mkdir /var/lib/sharelatex/redis
 ```
 
-docker-compose.yml 수정
+### Editing a docker-compose.yml
 
 ```shell
 vim docker-compose.yml
