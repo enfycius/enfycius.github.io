@@ -50,7 +50,7 @@ Let $$A, B$$ be two square matrices of the same size. We say that $$A$$ is **sim
 
 $$(A+B)^{2} = (A+B)(A+B) = A^{2} + AB + BA + B^{2}$$
 
-$$\text{By the way, } AB = BA$$
+$$(\text{By the way, } AB = BA)$$
 
 $$\therefore A^{2} + AB + BA + B^{2} = A^{2} + AB + AB + B^{2} = A^{2} + 2AB + B^{2}$$
 
@@ -58,7 +58,7 @@ $$\therefore A^{2} + AB + BA + B^{2} = A^{2} + AB + AB + B^{2} = A^{2} + 2AB + B
 
 $$(A+B)(A-B) = A^{2} - AB + BA -B^{2}$$
 
-$$\text{By the way, } AB = BA$$
+$$(\text{By the way, } AB = BA)$$
 
 $$\therefore A^{2} - AB + BA -B^{2} =  A^{2} - AB + AB -B^{2} = A^{2}-B^{2}$$ 
 
@@ -154,7 +154,7 @@ $$(IAI)^{n} = (A)^{n}$$
 
 $$(\because AI = IA = A)$$
 
-$$\text{By the way, } (A)^{n} = O$$
+$$(\text{By the way, } (A)^{n} = O)$$
 
 $$\therefore (BAB^{-1})^{n} = O$$
 
@@ -166,11 +166,7 @@ The answer to the question is $$\begin{pmatrix}0&1\\
 My answer to the question is $$\begin{pmatrix}i&0\\
 0&i\end{pmatrix}$$.
 
-According to the Jaemin Shin, PhD, my answer is correct.
-
-However, he also said my answer is still incorrect.
-
-Since the range of value is not specified in the question, it seems to be limited to a real number.
+> According to the Jaemin Shin, PhD, my answer is correct. However, he also said my answer is still incorrect. Since the range of value is not specified in the question, it seems to be limited to a real number.
 
 So the answer to the question is $$\begin{pmatrix}0&1\\
 -1&0\end{pmatrix}$$.
