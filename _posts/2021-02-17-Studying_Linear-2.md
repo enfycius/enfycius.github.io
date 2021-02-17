@@ -46,7 +46,7 @@ Let $$A, B$$ be two square matrices of the same size. We say that $$A$$ is **sim
 
 # Answer
 
-# Answer 1
+## Answer 1
 
 $$(A+B)^{2} = (A+B)(A+B) = A^{2} + AB + BA + B^{2}$$
 
