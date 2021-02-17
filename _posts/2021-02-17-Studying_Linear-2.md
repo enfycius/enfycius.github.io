@@ -72,7 +72,7 @@ $$T^{-1}BT = T^{-1}TAT^{-1}T$$
 
 $$T^{-1}BT = IAI$$
 
-$$(\because T^{-1}T = TT^{-1} = I)$$
+$$(\because T \text{ is invertible, } T^{-1}T = TT^{-1} = I)$$
 
 $$T^{-1}BT = A$$
 
