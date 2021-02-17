@@ -4,6 +4,9 @@ main:
   - title: "PSG"
     url: http://psg.or.kr/
 
+  - title: "ShareLaTeX"
+    url: http://psg.or.kr:3032/
+
   - title: "Categories"
     url: /categories/
 
