@@ -1,5 +1,5 @@
 ---
-title: "Linear Algebra: Matrices and Linear Equations"
+title: "Linear Algebra: Matrices and Linear Equations - Matrices"
 
 classes: wide
 
