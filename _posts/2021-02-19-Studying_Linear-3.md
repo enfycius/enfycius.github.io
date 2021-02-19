@@ -71,21 +71,13 @@ $$R(\theta_{1})R(\theta_{2}) = \begin{pmatrix}\cos{\theta_{1}}&-\sin{\theta_{1}}
 \sin{\theta_{1}}&\cos{\theta_{1}}\end{pmatrix}\begin{pmatrix}\cos{\theta_{2}}&-\sin{\theta_{2}}\\
 \sin{\theta_{2}}&\cos{\theta_{2}}\end{pmatrix}$$
 
-$$\begin{pmatrix}\cos{\theta_{1}}&-\sin{\theta_{1}}\\
-\sin{\theta_{1}}&\cos{\theta_{1}}\end{pmatrix}\begin{pmatrix}\cos{\theta_{2}}&-\sin{\theta_{2}}\\
-\sin{\theta_{2}}&\cos{\theta_{2}}\end{pmatrix}=\begin{pmatrix}\cos{\theta_{1}}\cos{\theta_{2}}-\sin{\theta_{1}}\sin{\theta_{2}}&-\cos{\theta_{1}}\sin{\theta_{2}}-\sin{\theta_{1}}\cos{\theta_{2}}\\
-\sin{\theta_{1}}\cos{\theta_{2}}+\cos{\theta_{1}}\sin{\theta_{2}}&-\sin{\theta_{1}}\sin{\theta_{2}}+\cos{\theta_{1}}\cos{\theta_{2}}
-\end{pmatrix}$$
-
 $$=\begin{pmatrix}\cos{\theta_{1}}\cos{\theta_{2}}-\sin{\theta_{1}}\sin{\theta_{2}}&-\cos{\theta_{1}}\sin{\theta_{2}}-\sin{\theta_{1}}\cos{\theta_{2}}\\
 \sin{\theta_{1}}\cos{\theta_{2}}+\cos{\theta_{1}}\sin{\theta_{2}}&-\sin{\theta_{1}}\sin{\theta_{2}}+\cos{\theta_{1}}\cos{\theta_{2}}
-\end{pmatrix} = \begin{pmatrix}\cos{(\theta_{1}+\theta_{2})}&-\sin{(\theta_{1}+\theta_{2})}\\
-\sin{(\theta_{1}+\theta_{2})}&\cos{(\theta_{1}+\theta_{2})}
 \end{pmatrix}$$
 
 $$=\begin{pmatrix}\cos{(\theta_{1}+\theta_{2})}&-\sin{(\theta_{1}+\theta_{2})}\\
 \sin{(\theta_{1}+\theta_{2})}&\cos{(\theta_{1}+\theta_{2})}
-\end{pmatrix} = R(\theta_{1}+\theta_{2})$$
+\end{pmatrix}=R(\theta_{1}+\theta_{2})$$
 
 
 (b)
@@ -101,7 +93,7 @@ $$\because \begin{pmatrix}\cos{(-\theta)}&-\sin{(-\theta)}\\
 \sin{(-\theta)}&\cos{(-\theta)}\end{pmatrix} = \begin{pmatrix}\cos{\theta}&\sin{\theta}\\
 -\sin{\theta}&\cos{\theta} \end{pmatrix}$$
 
-$$(\because \sin(-\theta) = -\sin(\theta), \cos(-\theta) = \cos(\theta))$$
+$$(\because \sin(-\theta) = -\sin(\theta),\text{ } \cos(-\theta) = \cos(\theta))$$
 
 
 (c)
@@ -167,21 +159,11 @@ $$A^{k+1} = A^{k}A = AA^{k} = \begin{pmatrix}\cos{\theta}&-\sin{\theta}\\
 \sin{k\theta}&\cos{k\theta}
 \end{pmatrix}$$
 
-$$=\begin{pmatrix}\cos{\theta}&-\sin{\theta}\\
-\sin{\theta}&\cos{\theta}
-\end{pmatrix}\begin{pmatrix}\cos{k\theta}&-\sin{k\theta}\\
-\sin{k\theta}&\cos{k\theta}
-\end{pmatrix}=\begin{pmatrix}\cos{\theta}\cos{k\theta}-\sin{\theta}\sin{k\theta}&-\cos{\theta}\sin{k\theta}-\sin{\theta}\cos{k\theta}\\
+$$=\begin{pmatrix}\cos{\theta}\cos{k\theta}-\sin{\theta}\sin{k\theta}&-\cos{\theta}\sin{k\theta}-\sin{\theta}\cos{k\theta}\\
 \sin{\theta}\cos{k\theta}+\cos{\theta}\sin{k\theta}&-\sin{\theta}\sin{k\theta}+\cos{\theta}\cos{k\theta}
 \end{pmatrix}$$
 
-$$=\begin{pmatrix}\cos{\theta}&-\sin{\theta}\\
-\sin{\theta}&\cos{\theta}
-\end{pmatrix}\begin{pmatrix}\cos{k\theta}&-\sin{k\theta}\\
-\sin{k\theta}&\cos{k\theta}
-\end{pmatrix}=\begin{pmatrix}\cos{\theta}\cos{k\theta}-\sin{\theta}\sin{k\theta}&-\cos{\theta}\sin{k\theta}-\sin{\theta}\cos{k\theta}\\
-\sin{\theta}\cos{k\theta}+\cos{\theta}\sin{k\theta}&-\sin{\theta}\sin{k\theta}+\cos{\theta}\cos{k\theta}
-\end{pmatrix}=\begin{pmatrix}\cos{(k+1)\theta}&-\sin{(k+1)\theta}
+$$=\begin{pmatrix}\cos{(k+1)\theta}&-\sin{(k+1)\theta}
 \\
 \sin{(k+1)\theta}&\cos{(k+1)\theta}
 \end{pmatrix}$$
@@ -222,11 +204,17 @@ $$\therefore y_{1} = {x_{1}}\cos{\theta}-{x_{2}}\sin{\theta}, y_{2} = {x_{1}}\si
 
 <br/>
 
-$$Y^{2} = {y_{1}}^2+{y_{2}}^2 = {x_{1}}^2\cos^2{\theta}-2{x_{1}}{x_{2}}\cos{\theta}\sin{\theta}+{x_{2}}^2\sin^2{\theta}+{x_{1}}^2\sin^2{\theta}+2{x_{1}}{x_{2}}\sin{\theta}\cos{\theta}+{x_{2}}^2\cos^2{\theta}$$
+$$Y^{2} = {y_{1}}^2+{y_{2}}^2$$
 
-$$={x_{1}}^2(\cos^2{\theta}+\sin^2{\theta})-2{x_{1}}{x_{2}}\cos{\theta}\sin{\theta}+2{x_{1}}{x_{2}}\sin{\theta}\cos{\theta}+{x_{2}}^2(\sin^2{\theta}+\cos^2{\theta})={x_{1}}^2+{x_{2}}^2 = X^{2}$$
+$$={x_{1}}^2\cos^2{\theta}-2{x_{1}}{x_{2}}\cos{\theta}\sin{\theta}+{x_{2}}^2\sin^2{\theta}+{x_{1}}^2\sin^2{\theta}+2{x_{1}}{x_{2}}\sin{\theta}\cos{\theta}+{x_{2}}^2\cos^2{\theta}$$
+
+$$={x_{1}}^2(\cos^2{\theta}+\sin^2{\theta})-2{x_{1}}{x_{2}}\cos{\theta}\sin{\theta}+2{x_{1}}{x_{2}}\sin{\theta}\cos{\theta}+{x_{2}}^2(\sin^2{\theta}+\cos^2{\theta})$$
+
+$$={x_{1}}^2+{x_{2}}^2$$
 
 $$(\because \sin^2{\theta}+\cos^2{\theta} = 1)$$
+
+$$=X^{2}$$
 
 <br/>
 
