@@ -1,5 +1,5 @@
 ---
-title: "OpenCV 과제: 사진 색 칠하기 #1"
+title: "OpenCV 과제: 영상 색상 채우기 #1"
 
 classes: wide
 
