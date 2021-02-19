@@ -260,7 +260,7 @@ Mat draw_Histogram(Mat& hist) {
 }
 ```
 
-(필자는 편의를 위해 이름공간인 std와 cv를 사용했다.)
+(필자는 편의를 위해 이름공간인 cv를 사용했다.)
 
 필자는 흰색으로 채워진 볼록 다각형을 그리기 위해 fillConvexPoly Function을 이용했다.
 
