@@ -34,7 +34,7 @@ or it is equivalent to
 
 $$\left\|X\right\| = (\mathbf{X}^{\top}X)^{\frac{1}{2}}$$
 
-Here $$\mathbf{X}^\top$$ is the transpose of the vector $$$$. Note that
+Here $$\mathbf{X}^\top$$ is the transpose of the vector. $$$$ Note that
 
 $$\mathbf{(AB)}^\top = \mathbf{B}^\top\mathbf{A}^\top$$
 
