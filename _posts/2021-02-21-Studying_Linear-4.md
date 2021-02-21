@@ -14,6 +14,8 @@ toc: true
 
 # Question
 
+[Reference - Question2](https://enfycius.github.io/linear%20algebra/Studying_Linear-3/)
+
 Because it is just rotation, the negative rotation is described by positive rotation.
 
 Therefore, if $$y^2 = x^2$$ is shown to be established, regardless of whether its root is positive or negative, is the proof completed?
