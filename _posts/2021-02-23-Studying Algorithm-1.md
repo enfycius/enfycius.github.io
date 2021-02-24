@@ -6,7 +6,7 @@ classes: wide
 categories:
   - Algorithm
 tags:
-  - BOJ 17254
+  - BOJ
 
 toc: true
 ---
