@@ -5,7 +5,7 @@ author_profile: true
 
 ![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=Enfycius&fontSize=70)
 
-:wave: Hello My name is Jonghyeok Kim, I am currently the leader of the PSG and You Hyeok team.
+:wave: Hello My name is Jonghyeok Kim, I am currently the leader of the PSG and YouHyeok team.
 
 ### :runner: Career
 
@@ -16,7 +16,7 @@ author_profile: true
 |     2020.03 ~     |      Education      | Department of Civil and Environmental Engineering |           Hanbat National University           |
 |      2017.09      | External Activities |     Institute for Higher Education Innovation     |                Yonsei University               |
 |     2020.05 ~     | External Activities |                     Translator                    |                    JavaTPoint                  |
-|     2014.01.31 ~  |   Team Activities   |                 Leader, You Hyeok Team            |                        x                       |
+|     2014.01.31 ~  |   Team Activities   |                 Leader, YouHyeok Team             |                        x                       |
 |     2019.11 ~     |   Team Activities   |                 Hacker, MOKA Team                 |             Sungkyunkwan University            |
 |     2019.12 ~     |   Team Activities   |                 Leader, PSG Team                  |                        x                       |
 | 2020.10 ~ 2021.02 |   Team Activities   |               Leader, APPSILON Team               |                        x                       |
@@ -36,7 +36,7 @@ author_profile: true
 - [Haesung Notice App](https://play.google.com/store/apps/details?id=com.jhspt.recycleproj "Recycle Project")
 - [PSG Website](http://psg.or.kr/ "Stellar Project")
 
-### :boom: Team Projects
+### :boom: Team Projects (PSG)
 
 #### [The Stellar Project](https://github.com/psgstellar/Stellar "The Stellar Project")
 
@@ -68,6 +68,14 @@ author_profile: true
 ![Open](https://img.shields.io/github/issues/psgstellar/Booung) ![Close](https://img.shields.io/github/issues-closed/psgstellar/Booung) ![Open_P](https://img.shields.io/github/issues-pr/psgstellar/Booung) ![Close_P](https://img.shields.io/github/issues-pr-closed/psgstellar/Booung)
  
 ![Contributor](https://img.shields.io/github/contributors/psgstellar/Booung) ![Activity](https://img.shields.io/github/commit-activity/m/psgstellar/Booung) ![Last](https://img.shields.io/github/last-commit/psgstellar/Booung/development)
+
+### :boom: Team Projects (YouHyeok)
+
+#### [The Semyorka Project](https://github.com/YouHyeok/Semyorka "The Semyorka Project")
+
+![Open](https://img.shields.io/github/issues/YouHyeok/Semyorka) ![Close](https://img.shields.io/github/issues-closed/YouHyeok/Semyorka) ![Open_P](https://img.shields.io/github/issues-pr/YouHyeok/Semyorka) ![Close_P](https://img.shields.io/github/issues-pr-closed/YouHyeok/Semyorka) 
+
+![Contributor](https://img.shields.io/github/contributors/YouHyeok/Semyorka) ![Activity](https://img.shields.io/github/commit-activity/m/YouHyeok/Semyorka) ![Last](https://img.shields.io/github/last-commit/YouHyeok/Semyorka/development)
 
 ### :fire: Side Projects
 
