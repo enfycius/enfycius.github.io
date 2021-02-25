@@ -177,7 +177,7 @@ int main(void) {
 
 필자는 Peaks 값을 찾는 함수의 이름을 find_Peaks로 지었으며, Mat Reference Type의 src라는 이름의 매개변수를 선언했다.
 
-또한, 찾은 Peaks들의 값(int형)을 저장한 vector 자료형을 반환할 것이므로 반환형은 std::vector<int>로 했다.
+또한, 찾은 Peaks들의 값(int형)을 저장한 vector 자료형을 반환할 것이므로 반환형은 std::vector\<int\>로 했다.
 
 즉, 이를 코드로 보이면 다음과 같다.
 
@@ -269,7 +269,7 @@ p.y의 주변 반경 10만큼을 0으로 채우면, 히스토그램이 다음의
 
 필자는 Line을 그려주는 함수의 이름을 draw_Line으로 지었으며, Mat Reference Type의 src와 hist라는 이름의 매개변수를 두 개 선언했다.
 
-또한, peaks 값들로부터 마지막 문항을 해결해야하므로 반환형은 std::vector<int>로 선언했다.
+또한, peaks 값들로부터 마지막 문항을 해결해야하므로 반환형은 std::vector\<int\>로 선언했다.
 
 즉, 
 
@@ -298,7 +298,7 @@ void cv::line(InputOutputArray img,
 
 [Reference](https://docs.opencv.org/master/d6/d6e/group__imgproc__draw.html#ga7078a9fae8c7e7d13d24dac2520ae4a2)
 
-먼저 draw_Line Function 내에서 std::vector<int>형의 변수를 하나 선언하고, find_Peaks Function을 호출하여 그 반환값을 선언한 변수에 저장하자.
+먼저 draw_Line Function 내에서 std::vector\<int\>형의 변수를 하나 선언하고, find_Peaks Function을 호출하여 그 반환값을 선언한 변수에 저장하자.
 
 find_Peaks Function을 호출할 때 인자로서 src 매개변수의 값을 보내자.
 
