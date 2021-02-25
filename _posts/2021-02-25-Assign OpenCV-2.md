@@ -203,7 +203,7 @@ void cv::minMaxLoc(InputArray src,
 )
 ```
 
-이 Function에 대한 더 자세한 사항은 아래 링크를 참고해보자.
+위 Function에 대한 더 자세한 사항은 아래 링크를 참고해보자.
 
 [Reference](https://docs.opencv.org/3.4/d2/de8/group__core__array.html#gab473bf2eb6d14ff97e89b355dac20707)
 
@@ -294,7 +294,7 @@ void cv::line(InputOutputArray img,
 )
 ```
 
-이 함수에 대한 더 자세한 사항은 아래 Reference를 참조하자.
+위 함수에 대한 더 자세한 사항은 아래 Reference를 참조하자.
 
 [Reference](https://docs.opencv.org/master/d6/d6e/group__imgproc__draw.html#ga7078a9fae8c7e7d13d24dac2520ae4a2)
 
