@@ -234,16 +234,16 @@ vector<int> find_Peaks(Mat& src) {
     vector<int> peaks;      // peaks들의 값을 저장할 변수
     Mat dup_src;            // 매개변수 src를 복제하여 저장할 변수
     
-    Point p;        // 최댓값의 위치를 저장하는 변수
+    Point p;        // 히스토그램의 최대 Peak 값을 저장하는 변수
     
     dup_src = src.clone();      // 매개변수 src를 복제하여 dup_src에 담는다.
     
     for(int i=0; i<4; i++) {    // 위 이미지에서 보여지는 히스토그램이 4개 있으므로, 4회 반복.
-        minMaxLoc(dup_src, 0, 0, 0, &p);       // 우리는 위치값만 필요하므로 최대와 최솟값을 저장할 변수는 필요치 않음.
-        peaks.push_back(p.y);       // 위치 값 중 y값만을 peaks에 담자. 실제로 가장 큰 Peak를 가지는 히스토그램의 y값이 먼저 담기므로, 실제로 히스토그램 위에 Line을 그릴 때는 가장 작은 Peak를 가지는 히스토그램부터 그려진다. (Stack)
-        dup_src.at<float>(p.y) = 0;        // 필자는 단순히 최솟값으로서 0을 채택했다.
+        minMaxLoc(dup_src, 0, 0, 0, &p);       // 우리는 히스토그램의 Peak 값만 필요하므로 최댓값과 최솟값을 저장할 변수는 필요치 않음.
+        peaks.push_back(p.y);       // 위치 값 중 y값만을 peaks에 담자.
+        dup_src.at<float>(p.y) = 0;        // 최솟값인 0을 넣자.
 
-        for(int j=0; j<10; j++) {           // p.y의 주변 반경 10만큼을 0으로 채운다.
+        for(int j=0; j<10; j++) {           // p.y의 주변 반경 10만큼을 최솟값 0으로 채운다.
             dup_src.at<float>(p.y-(j+1)) = 0;   
             dup_src.at<float>(p.y+(j+1)) = 0;
         }
@@ -372,24 +372,24 @@ using namespace std;
 
 vector<int> find_Peaks(Mat& src) {
     vector<int> peaks;      // peaks들의 값을 저장할 변수
-        Mat dup_src;            // 매개변수 src를 복제하여 저장할 변수
-        
-        Point p;        // 최댓값의 위치를 저장하는 변수
-        
-        dup_src = src.clone();      // 매개변수 src를 복제하여 dup_src에 담는다.
-        
-        for(int i=0; i<4; i++) {    // 위 이미지에서 보여지는 히스토그램이 4개 있으므로, 4회 반복.
-            minMaxLoc(dup_src, 0, 0, 0, &p);       // 우리는 위치값만 필요하므로 최대와 최솟값을 저장할 변수는 필요치 않음.
-            peaks.push_back(p.y);       // 위치 값 중 y값만을 peaks에 담자. 실제로 가장 큰 Peak를 가지는 히스토그램의 y값이 먼저 담기므로, 실제로 히스토그램 위에 Line을 그릴 때는 가장 작은 Peak를 가지는 히스토그램부터 그려진다. (Stack)
-            dup_src.at<float>(p.y) = 0;        // 필자는 단순히 최솟값으로서 0을 채택했다.
+    Mat dup_src;            // 매개변수 src를 복제하여 저장할 변수
+    
+    Point p;        // 최댓값의 위치를 저장하는 변수
+    
+    dup_src = src.clone();      // 매개변수 src를 복제하여 dup_src에 담는다.
+    
+    for(int i=0; i<4; i++) {    // 위 이미지에서 보여지는 히스토그램이 4개 있으므로, 4회 반복.
+        minMaxLoc(dup_src, 0, 0, 0, &p);       // 우리는 히스토그램의 Peak 값만 필요하므로 최댓값과 최솟값을 저장할 변수는 필요치 않음.
+        peaks.push_back(p.y);       // 위치 값 중 y값만을 peaks에 담자.
+        dup_src.at<float>(p.y) = 0;        // 최솟값인 0을 넣자.
 
-            for(int j=0; j<10; j++) {           // p.y의 주변 반경 10만큼을 0으로 채운다.
-                dup_src.at<float>(p.y-(j+1)) = 0;
-                dup_src.at<float>(p.y+(j+1)) = 0;
-            }
+        for(int j=0; j<10; j++) {           // p.y의 주변 반경 10만큼을 최솟값 0으로 채운다.
+            dup_src.at<float>(p.y-(j+1)) = 0;   
+            dup_src.at<float>(p.y+(j+1)) = 0;
         }
-        
-        return peaks;       // peaks 값들 반환
+    }
+    
+    return peaks;       // peaks 값들 반환
 }
 
 vector<int> draw_Line(Mat& src, Mat& hist) {
