@@ -29,6 +29,7 @@ $$Ax$$ is a **combination of column vectors**:
 
 $$Ax = x(\text{column 1}) + y(\text{column 2}) + z(\text{column 3})$$
 
+<br />
 
 # Questions
 
@@ -46,6 +47,8 @@ Find the matrix $$P$$ that multiplies $$(x, y, z)$$ to give $$(y, z, x)$$. Find 
 y\end{pmatrix}$$ is $$\begin{pmatrix}y \\
 -x\end{pmatrix}$$
 (b) What 2 by 2 matrix $$R^{2}$$ rotates every vector by $$180\,^{\circ}$$?
+
+<br />
 
 # Answers
 
