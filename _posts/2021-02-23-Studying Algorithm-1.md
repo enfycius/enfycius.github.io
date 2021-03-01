@@ -4,7 +4,7 @@ title: "BOJ: 17254 키보드 이벤트"
 classes: wide
 
 categories:
-  - Algorithm
+  - Algorithms
 tags:
   - BOJ
 

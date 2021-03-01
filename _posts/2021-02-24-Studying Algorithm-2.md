@@ -4,7 +4,7 @@ title: "BOJ: 12755 수면 장애"
 classes: wide
 
 categories:
-  - Algorithm
+  - Algorithms
 tags:
   - BOJ
 

@@ -4,7 +4,7 @@ title: "BOJ: 2581 소수"
 classes: wide
 
 categories:
-  - Algorithm
+  - Algorithms
 tags:
   - BOJ
 

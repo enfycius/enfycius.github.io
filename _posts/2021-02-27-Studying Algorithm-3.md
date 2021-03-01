@@ -4,7 +4,7 @@ title: "BOJ: 1934 최소공배수"
 classes: wide
 
 categories:
-  - Algorithm
+  - Algorithms
 tags:
   - BOJ
 
