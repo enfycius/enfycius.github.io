@@ -12,7 +12,7 @@ tags:
 toc: true
 ---
 
-# Question 
+# Questions 
 
 ## Question 1
 
@@ -44,7 +44,7 @@ Let $$A, B$$ be two square matrices of the same size. We say that $$A$$ is **sim
 
 <br/>
 
-# Answer
+# Answers
 
 ## Answer 1
 

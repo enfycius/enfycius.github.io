@@ -12,7 +12,7 @@ tags:
 toc: true
 ---
 
-# Question 
+# Questions 
 
 ## Question 1
 
@@ -32,7 +32,7 @@ If a matrix is skew-symmetric, what can you say about its diagonal elements?
 
 <br/>
 
-# Answer
+# Answers
 
 ## Answer 1
 

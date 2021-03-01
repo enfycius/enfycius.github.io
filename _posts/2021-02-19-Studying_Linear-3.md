@@ -12,7 +12,7 @@ tags:
 toc: true
 ---
 
-# Question 
+# Questions
 
 ## Question 1
 
@@ -61,7 +61,7 @@ Such a matrix is called **upper triangular**. If $$A$$, $$B$$ are upper triangul
 
 <br/>
 
-# Answer
+# Answers
 
 ## Answer 1
 
