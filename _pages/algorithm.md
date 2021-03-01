@@ -1,9 +1,9 @@
 ---
-title:  "Algorithm"
-permalink: /categories/Algorithm
+title:  "Algorithms"
+permalink: /categories/Algorithms
 layout: category
 author_profile: true
-taxonomy: Algorithm
+taxonomy: Algorithms
 ---
 
 알고리즘 글 모음
