@@ -67,7 +67,7 @@ $$\text{The limit will exist only if the nominator approaches 0 as } x\to{-2}$$
 
 <br />
 
-$$\lim_{x\to{-2}}{3x^{2}+ax+a+3} = 0$$
+$$\lim_{x\to{-2}}{(3x^{2}+ax+a+3)} = 0$$
 
 $$3(-2)^2+a(-2)+a+3 = 0$$
 
@@ -77,13 +77,13 @@ $$\therefore a = 15$$
 
 $$\text{With } a = 15, \text{the limit becomes}$$
 
-$$= \lim_{x\to{-2}}{\frac{3x^{2}+15x+18}{x^{2}+x-2}} = \lim_{x\to{-2}}{\frac{3(x+2)(x+3)}{(x-1)(x+2)}}$$
+$$\lim_{x\to{-2}}{\frac{3x^{2}+15x+18}{x^{2}+x-2}} = \lim_{x\to{-2}}{\frac{3(x+2)(x+3)}{(x-1)(x+2)}}$$
 
-$$= \lim_{x\to{-2}}{\frac{3(x+2)(x+3)}{(x-1)(x+2)}} = \lim_{x\to{-2}}{\frac{3(x+3)}{(x-1)}}$$
+$$ = \lim_{x\to{-2}}{\frac{3(x+3)}{(x-1)}}$$
 
 $$(\because x\to{-2} \text{ is not equal to }x = -2)$$
 
-$$= \lim_{x\to{-2}}{\frac{3(x+3)}{(x-1)}} = \frac{3((-2)+3)}{((-2)-1)}$$
+$$ = \frac{3((-2)+3)}{((-2)-1)}$$
 
 $$= \frac{3}{(-3)} = -1$$
 
