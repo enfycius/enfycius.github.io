@@ -1,6 +1,9 @@
 # main links
 main:
 
+  - title: "K-USCM"
+    url: https://k-uscm.github.io/
+
   - title: "PSG"
     url: http://psg.or.kr/
 
