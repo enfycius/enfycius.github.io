@@ -23,6 +23,10 @@ $$\text{where }\tau = 2\pi.$$
 
 <br />
 
+![Figure](/assets/images/geomatics/proof-1.png)
+
+<br />
+
 $$\text{(1) Prove Girard's Theorem.}$$
 
 $$\text{(2) Prove that } \varepsilon^{''} = \frac{T}{r^{2}}\rho^{''}.$$
