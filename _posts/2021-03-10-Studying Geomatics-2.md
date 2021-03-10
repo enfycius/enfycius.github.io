@@ -87,7 +87,7 @@ $$\text{Here,}$$
 
 $$\rho^{''} = \frac{180^{\circ}}{\pi}$$
 
-$$\therefore \varepsilon^{''} = \frac{T}{R^{2}}\rho^{''}$$
+$$\therefore \varepsilon^{''} = \frac{T}{r^{2}}\rho^{''}$$
 
 
 
