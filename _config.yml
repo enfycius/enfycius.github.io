@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Jonghyeok Kim"
-  avatar           : /assets/images/blog/kjh.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/blog/profile.svg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Interests: <br>Computer Vision<br>Machine Learning<br>Image and Voice Recognition"
   location         : "JeonJu"
   email            : "20201967@edu.hanbat.ac.kr"
