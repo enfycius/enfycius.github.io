@@ -117,21 +117,21 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
 
   @include breakpoint($large) {
     display: block;
     width: auto;
     height: auto;
+    
   }
 
   img {
-    max-width: 120px;
-    border-radius: 50%;
+    max-width: 150px;
 
     @include breakpoint($large) {
-      border: 0.1px solid #393E46;
+      border: 0.1px solid transparent;
     }
   }
 }
