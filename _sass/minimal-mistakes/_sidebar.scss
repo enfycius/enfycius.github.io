@@ -129,6 +129,10 @@
 
   img {
     max-width: 150px;
+
+    @include breakpoint($large) {
+      border: 0.1px solid transparent;
+    }
   }
 }
 
