@@ -30,3 +30,10 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 .fa-custom {
   filter: invert(100%)
 }
+
+.archive {
+  a {
+    text-decoration: none;
+  }
+}
+
