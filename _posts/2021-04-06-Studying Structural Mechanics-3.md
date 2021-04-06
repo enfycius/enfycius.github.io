@@ -1,5 +1,5 @@
 ---
-title: "Structural Mechanics: Assignment 1-2"
+title: "Structural Mechanics: Assignment 1-3"
 
 classes: wide
 
@@ -15,12 +15,12 @@ toc: true
 
 ## 내용
 
-단면법을 이용하여 "x"로 표시된 트러스 부재에 대한 부재력을 계산하라.
+절점법을 이용하여 트러스의 모든 부재를 계산하라.
 
-![Figure](/assets/images/Structural_Mechanics/assignment/4week/assign-4-2.png)
+![Figure](/assets/images/Structural_Mechanics/assignment/4week/assign-4-3.png)
 
 # 답변
 
 ## 내용
 
-![Figure](/assets/images/Structural_Mechanics/assignment/4week/assign-4-2-a.png)
+![Figure](/assets/images/Structural_Mechanics/assignment/4week/assign-4-3-a.png)
