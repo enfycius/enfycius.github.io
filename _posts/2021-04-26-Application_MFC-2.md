@@ -84,7 +84,7 @@ void vonKoch::drawFourLines(double side, int level) {
 }
 
 void vonKoch::snowflake() {
-    for(int i=1; i<=4; i++) {
+    for(int i=1; i<=3; i++) {
         drawFourLines(side, level);
         right(120);
     }
