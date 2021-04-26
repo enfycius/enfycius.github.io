@@ -314,19 +314,19 @@ HCURSOR CMFCApplication8Dlg::OnQueryDragIcon() {
 
 ## level == 1
 
-![Figure](/assets/images/mfc/studying/snowflake/level1.png)
+![Figure](/assets/images/mfc/studying/snowflake/snow-level1.png)
 
 ## level == 2
 
-![Figure](/assets/images/mfc/studying/snowflake/level2.png)
+![Figure](/assets/images/mfc/studying/snowflake/snow-level2.png)
 
 ## level == 3
 
-![Figure](/assets/images/mfc/studying/snowflake/level3.png)
+![Figure](/assets/images/mfc/studying/snowflake/snow-level3.png)
 
 ## level == 4
 
-![Figure](/assets/images/mfc/studying/snowflake/level4.png)
+![Figure](/assets/images/mfc/studying/snowflake/snow-level4.png)
 
 # 참고
 
