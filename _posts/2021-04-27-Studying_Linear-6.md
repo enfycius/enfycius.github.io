@@ -74,4 +74,6 @@ int main(void) {
 }
 ```
 
+# Result
+
 ![Figure](/assets/images/linear/jacobi/jacobi-result.png)
