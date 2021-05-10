@@ -96,7 +96,7 @@ int main(void) {
     vector<char>::iterator iter;
 
     int n;
-    int b = 0, r = 0, count = 0;
+    int b = 0, r = 0;
 
     cin>>n;
 
