@@ -1,5 +1,5 @@
 ---
-title: "BOJ: 10430 나머지"
+title: "BOJ: 11654 아스키 코드"
 
 classes: wide
 
@@ -13,33 +13,86 @@ toc: true
 
 # 문제
 
-$$(A+B)\%C$$는 $$((A\%C)+(B\%C))\%C$$와 같을까?
-
-$$(A \times B)\%C$$는 $$((A\%C) \times (B\%C))\%C$$ 와 같을까?
-
-세 수 $$A, B, C$$가 주어졌을 때, 위의 네 가지 값을 구하는 프로그램을 작성하시오.
+알파벳 소문자, 대문자, 숫자 0-9중 하나가 주어졌을 때, 주어진 글자의 아스키 코드값을 출력하는 프로그램을 작성하시오.
 
 ## 입력
 
-첫째 줄에 $$A, B, C$$가 순서대로 주어진다. $$(2 \leq A, B, C \leq 10000)$$
+알파벳 소문자, 대문자, 숫자 0-9 중 하나가 첫째 줄에 주어진다.
 
 ## 출력
 
-첫째 줄에 $$(A+B)\%C$$, 둘째 줄에 $$((A\%C) + (B\%C))\%C$$, 셋째 줄에 $$(A \times B)\%C$$, 넷째 줄에 $$((A\%C) \times (B\%C))\%C$$를 출력한다.
+입력으로 주어진 글자의 아스키 코드 값을 출력한다.
 
 ### 예제 입력 1
 
 ```shell
-5 8 4
+A
 ```
 
 ### 예제 출력 1
 
 ```shell
-1
-1
+65
+```
+
+### 예제 입력 2
+
+```shell
+C
+```
+
+### 예제 출력 2
+
+```shell
+67
+```
+
+### 예제 입력 3
+
+```shell
 0
-0
+```
+
+### 예제 출력 3
+
+```shell
+48
+```
+
+### 예제 입력 4
+
+```shell
+9
+```
+
+### 예제 출력 4
+
+```shell
+57
+```
+
+### 예제 입력 5
+
+```shell
+a
+```
+
+### 예제 출력 5
+
+```shell
+97
+```
+
+### 예제 입력 6
+
+```shell
+z
+```
+
+### 예제 출력 6
+
+```shell
+122
 ```
 
 <br/>
@@ -52,14 +105,11 @@ $$(A \times B)\%C$$는 $$((A\%C) \times (B\%C))\%C$$ 와 같을까?
 using namespace std;
 
 int main(void) {
-    int a, b, c;
+    char i;
 
-    cin>>a>>b>>c;
+    cin>>i;
 
-    cout<<(a+b)%c<<'\n';
-    cout<<((a%c)+(b%c))%c<<'\n';
-    cout<<(a*b)%c<<'\n';
-    cout<<((a%c)*(b%c))%c;
+    cout<<static_cast<int>(i);
 
     return 0;
 }
@@ -69,4 +119,4 @@ int main(void) {
 
 # Reference
 
-[BOJ](https://www.acmicpc.net/problem/10430)
+[BOJ](https://www.acmicpc.net/problem/11654)
