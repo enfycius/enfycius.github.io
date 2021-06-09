@@ -60,7 +60,7 @@ csv file을 잘 살펴보면, Elongation Percent data가 존재하고, 해당 da
 
 $$Elongation = \frac{\Delta{L}}{L}\times{100}(\%)$$
 
-위 식에서 $$Strain = \varepsilon = \frac{\delta{L}}{L}$$ 이므로, Elongation Percent data를 단순히 100으로 나눠주기만 하면 그 값이 Strain이라는 것은 자명하다.
+위 식에서 $$Strain = \varepsilon = \frac{\Delta{L}}{L}$$ 이므로, Elongation Percent data를 단순히 100으로 나눠주기만 하면 그 값이 Strain이라는 것은 자명하다.
 
 그러므로 다음과 같이 코드를 작성하여 Stress data(9 Column)는 Stress List에, Strain data는 Elongation Percent data(10 Column)를 100으로 나누어 Strain List에 삽입하자.
 
