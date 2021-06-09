@@ -58,7 +58,7 @@ for line in rdr:
 
 csv file을 잘 살펴보면, Elongation Percent data가 존재하고, 해당 data는 다음의 식으로부터 유도되었으며,
 
-$$Elongation = \frac{\Delta{L}}{L}\times{100}(%%)$$
+$$Elongation = \frac{\Delta{L}}{L}\times{100}(\%)$$
 
 위 식에서 $$Strain = \varepsilon = \frac{\delta{L}}{L}$$ 이므로, Elongation Percent data를 단순히 100으로 나눠주기만 하면 그 값이 Strain이라는 것은 자명하다.
 
