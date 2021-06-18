@@ -15,13 +15,12 @@ author_profile: true
 |     2015.11.25    |        Award        |                     Gold Award                    | Educational Research and Information Institute |
 |     2020.03 ~     |      Education      | Department of Civil and Environmental Engineering |           Hanbat National University           |
 |      2017.09      | External Activities |     Institute for Higher Education Innovation     |                Yonsei University               |
-|     2020.05 ~     | External Activities |                     Translator                    |                    JavaTPoint                  |
+| 2020.05 ~ 2021.03 | External Activities |                     Translator                    |                    JavaTPoint                  |
 |     2014.01.31 ~  |   Team Activities   |                 Leader, YouHyeok Team             |                        x                       |
 |     2019.11 ~     |   Team Activities   |                 Hacker, MOKA Team                 |             Sungkyunkwan University            |
 |     2019.12 ~     |   Team Activities   |                 Leader, PSG Team                  |                        x                       |
 | 2020.10 ~ 2021.02 |   Team Activities   |               Leader, APPSILON Team               |                        x                       |
 |     2021.02 ~     |   Team Activities   |               Researcher, Dropper Lab             |                    Halliance                   |
-|     2021.02 ~     |   Team Activities   |               App Developer, 과제 다했니             |                    과제 다했니                    |
 | 2018.08 ~ 2018.09 |       Project       |The Recycle Project<br />(Haesung High School Notice App)|      Jeonju Haesung High School          |
 |     2020.05 ~     |       Project       | The Stellar Project<br />(One Commit per Day)     |                    PSG Team                    |
 |     2021.01 ~     |       Project       | The Demeter Project<br />(EZEN Const Web Site)    |                    PSG Team                    |
@@ -31,9 +30,9 @@ author_profile: true
 |     2021.02 ~     |       Project       | The Semyorka Project<br />(YouHyeok Official Website)|                 YouHyeok                    | 
 |     2021.02 ~     |       Project       | The JHs Project<br />(JongHyeok's OS)             |                        x                       |
 |     2021.03 ~     |       Project       | The Apollo Project<br />(Hanbat-Assignment-Viewer)|                        x                       |
-|     2021.03 ~     |       Project       | The Pigbar Donut Project<br />(Information)       |                    과제 다했니                    |
-|     2021.02 ~     | Research Activities |                   XAI Researcher                  |  Mathematical Sciences Lab, Hanbat Nat'l Univ. |
-|     2021.03.22 ~ 2021.06.11 | Extracurricular Activities |  Math Assistant                  |  Nomad College, Hanbat Nat'l Univ.             | 
+|     2021.02 ~     | Research Activities | Resolving an Inverse Problem based on Deep Neural Networks | Mathematical Sciences Lab, Hanbat Nat'l Univ. |
+|     2021.07 ~     | Research Activities | Image Processing based on Deep Neural Networks for Detecting a Fender | Construction Information Technology Lab, Hanbat Nat'l Univ. |
+|     2021.03.22 ~ 2021.06.17 | Extracurricular Activities | Math Assistant | Nomad College, Hanbat Nat'l Univ. | 
 
 
 ### :rainbow: Works
