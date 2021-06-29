@@ -1,17 +1,7 @@
 # main links
 main:
-
-  - title: "YH Tech"
-    url: https://youhyeok.github.io/yhtech
-
   - title: "PSG"
     url: http://psg.or.kr/
-
-  - title: "ShareLaTeX"
-    url: http://psg.or.kr:3032/
-
-  - title: "Mattermost"
-    url: http://psg.or.kr:7239/
 
   - title: "Categories"
     url: /categories/
@@ -19,8 +9,8 @@ main:
   - title: "Tags"
     url: /tags/
 
-
-
+  - title: "About"
+    url: /about/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
