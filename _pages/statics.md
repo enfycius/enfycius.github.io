@@ -1,6 +1,6 @@
 ---
 title:  "Statics"
-permalink: /categories/Statics
+permalink: /category/Statics
 layout: enfycius_category
 taxonomy: Statics
 ---

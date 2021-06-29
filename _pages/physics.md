@@ -1,6 +1,6 @@
 ---
 title:  "Physics"
-permalink: /categories/physics
+permalink: /category/physics
 layout: enfycius_category
 taxonomy: Physics
 ---

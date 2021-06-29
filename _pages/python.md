@@ -1,6 +1,6 @@
 ---
 title:  "Python"
-permalink: /categories/Python
+permalink: /category/Python
 layout: enfycius_category
 taxonomy: Python
 ---

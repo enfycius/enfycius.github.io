@@ -1,6 +1,6 @@
 ---
 title:  "Blog"
-permalink: /categories/Blog
+permalink: /category/Blog
 layout: enfycius_category
 taxonomy: Blog
 ---

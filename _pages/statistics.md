@@ -1,6 +1,6 @@
 ---
 title:  "Statistics"
-permalink: /categories/Statistics
+permalink: /category/Statistics
 layout: enfycius_category
 taxonomy: Statistics
 ---

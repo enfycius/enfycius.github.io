@@ -1,6 +1,6 @@
 ---
 title:  "Assembly"
-permalink: /categories/Assembly
+permalink: /category/Assembly
 layout: enfycius_category
 taxonomy: Assembly
 ---

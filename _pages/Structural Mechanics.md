@@ -1,6 +1,6 @@
 ---
 title:  "Structural Mechanics"
-permalink: /categories/Structural-Mechanics
+permalink: /category/Structural-Mechanics
 layout: enfycius_category
 taxonomy: Structural Mechanics
 ---

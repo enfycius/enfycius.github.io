@@ -1,6 +1,6 @@
 ---
 title:  "Info"
-permalink: /categories/Info
+permalink: /category/Info
 layout: enfycius_category
 taxonomy: Info
 ---

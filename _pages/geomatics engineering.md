@@ -1,6 +1,6 @@
 ---
 title:  "Geomatics Engineering"
-permalink: /categories/Geomatics-Engineering
+permalink: /category/Geomatics-Engineering
 layout: enfycius_category
 taxonomy: Geomatics Engineering
 ---

@@ -1,6 +1,6 @@
 ---
 title:  "ShareLaTeX"
-permalink: /categories/ShareLaTeX
+permalink: /category/ShareLaTeX
 layout: enfycius_category
 taxonomy: ShareLaTeX
 ---
