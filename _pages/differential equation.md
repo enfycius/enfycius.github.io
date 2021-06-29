@@ -1,8 +1,7 @@
 ---
 title:  "Differential Equation"
-permalink: /categories/Differential Equation
-layout: category
-author_profile: true
+permalink: /categories/Differential-Equation
+layout: enfycius_category
 taxonomy: Differential Equation
 ---
 

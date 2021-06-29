@@ -1,9 +1,8 @@
 ---
-title:  "Mechanics of Materials"
-permalink: /categories/Mechanics of Materials
-layout: category
-author_profile: true
-taxonomy: Mechanics of Materials
+title:  "Structural Mechanics"
+permalink: /categories/Structural-Mechanics
+layout: enfycius_category
+taxonomy: Structural Mechanics
 ---
 
-재료역학 글 모음
+구조역학 글 모음

@@ -5,7 +5,7 @@ classes: wide
 
 categories:
   - C
-  - C++
+  - Cpp
 tags:
   - C
   - C++

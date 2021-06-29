@@ -4,7 +4,7 @@ title: "C++ 상속과 생성자의 호출"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
 tags:
   - C++
   - Programming

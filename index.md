@@ -1,4 +1,5 @@
 ---
 layout: home
-author_profile: true
+header:
+  overlay_color: rgb(0, 80, 157)
 ---

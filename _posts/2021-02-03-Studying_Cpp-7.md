@@ -4,7 +4,7 @@ title: "C++ 함수 템플릿의 정의"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
 tags:
   - C++
   - Programming

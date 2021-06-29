@@ -1,8 +1,7 @@
 ---
 title:  "C"
 permalink: /categories/C
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: C
 ---
 

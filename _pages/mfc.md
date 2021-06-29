@@ -1,8 +1,7 @@
 ---
 title:  "MFC"
 permalink: /categories/MFC
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: MFC
 ---
 
