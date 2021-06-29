@@ -1,8 +1,7 @@
 ---
 title:  "Assembly"
 permalink: /categories/Assembly
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: Assembly
 ---
 

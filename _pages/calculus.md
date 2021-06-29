@@ -1,8 +1,7 @@
 ---
 title:  "Calculus"
 permalink: /categories/Calculus
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: Calculus
 ---
 

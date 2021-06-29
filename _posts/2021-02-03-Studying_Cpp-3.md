@@ -4,7 +4,7 @@ title: "C++ IS-A 관계의 상속"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
 tags:
   - C++
   - Programming

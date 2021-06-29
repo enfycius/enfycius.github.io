@@ -4,7 +4,7 @@ title: "C++ 다형성"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
 tags:
   - C++
   - Programming

@@ -1,8 +1,7 @@
 ---
 title:  "Exhibition"
 permalink: /categories/Exhibition
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: Exhibition
 ---
 

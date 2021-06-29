@@ -1,8 +1,7 @@
 ---
 title:  "Python"
 permalink: /categories/Python
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: Python
 ---
 

@@ -1,8 +1,7 @@
 ---
 title:  "Algorithms"
 permalink: /categories/Algorithms
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: Algorithms
 ---
 
