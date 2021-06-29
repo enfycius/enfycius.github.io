@@ -1,0 +1,1478 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.2 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Python 과제: 은행 문제 - JH’s Labs</title>
+<meta name="description" content="질문">
+
+
+  <meta name="author" content="Jonghyeok Kim">
+  
+  <meta property="article:author" content="Jonghyeok Kim">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="JH's Labs">
+<meta property="og:title" content="Python 과제: 은행 문제">
+<meta property="og:url" content="http://localhost:4000/python/Assign-Python-2/">
+
+
+  <meta property="og:description" content="질문">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-02-05T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/python/Assign-Python-2/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "종혁",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="JH's Labs Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/blog/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/blog/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/blog/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/blog/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/blog/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/blog/blog.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          JH's Labs
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="http://psg.or.kr/">PSG</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+    <div class="sidebar sticky">
+  
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/blog/profile.svg" alt="Jonghyeok Kim" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Jonghyeok Kim</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Interests: <br>Computer Vision<br>Machine Learning<br>Image and Voice Recognition</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">JeonJu</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="http://psg.or.kr" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/enfycius" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github fa-custom" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/___o7k/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:20201967@edu.hanbat.ac.kr">
+            <meta itemprop="email" content="20201967@edu.hanbat.ac.kr">
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Python 과제: 은행 문제">
+    <meta itemprop="description" content="질문">
+    <meta itemprop="datePublished" content="2021-02-05T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Python 과제: 은행 문제
+</h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-02-05T00:00:00+09:00">February 5, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          11 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li>
+<a href="#%EC%A7%88%EB%AC%B8">질문</a>
+    <ul>
+      <li>
+<a href="#%EB%82%B4%EC%9A%A9">내용</a>
+        <ul>
+          <li>
+<a href="#%EC%8B%A4%EC%8A%B5">실습</a>
+            <ul>
+              <li><a href="#%EC%9D%80%ED%96%89%EC%9D%98-%EA%B3%84%EC%A2%8C-%EC%A0%95%EB%B3%B4%EB%A5%BC-%ED%91%9C%ED%98%84%ED%95%98%EB%8A%94-account-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EC%9D%B4-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%98%EB%8A%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8">은행의 계좌 정보를 표현하는 Account 클래스와 이 클래스를 활용하는 프로그램</a></li>
+              <li><a href="#%EC%B2%98%EB%A6%AC-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4">처리 시나리오</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+<a href="#%EB%8B%B5%EB%B3%80">답변</a>
+    <ul>
+      <li><a href="#%EB%82%B4%EC%9A%A9-1">내용</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="질문">질문</h1>
+
+<h2 id="내용">내용</h2>
+
+<h3 id="실습">실습</h3>
+
+<h4 id="은행의-계좌-정보를-표현하는-account-클래스와-이-클래스를-활용하는-프로그램">은행의 계좌 정보를 표현하는 Account 클래스와 이 클래스를 활용하는 프로그램</h4>
+<ul>
+  <li>클래스 이름: Account</li>
+  <li>속성:
+    <ul>
+      <li>(1) 계좌소유주 이름(name): 공개,</li>
+      <li>(2) 계좌번호(accountNum: 000-0000-0000, 총 11자리 숫자와 2개의 ‘-‘): 비공개,</li>
+      <li>(3) 잔고(balance): 비공개</li>
+    </ul>
+  </li>
+  <li>메소드:
+    <ul>
+      <li>(1) 입금(deposit) 메소드
+        <ul>
+          <li>입력: 입금할 금액, 실행 후: 현재잔고+입금액</li>
+        </ul>
+      </li>
+      <li>(2) 출금(withdraw) 메소드
+        <ul>
+          <li>입력: 출금할 금액, 실행 후: 현재잔고-출금액</li>
+        </ul>
+      </li>
+      <li>(3) 정보출력(print_accountInfo) 메소드
+        <ul>
+          <li>소유주 이름, 계좌번호, 현재잔고 출력</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="처리-시나리오">처리 시나리오</h4>
+
+<ol>
+  <li>소유주 이름, 계좌번호, 잔고의 입력을 받아 3개의 Account 인스턴스 user1, user2, user3를 생성하고 그 내용을 출력
+    <ul>
+      <li>조건: 계좌번호는 000-0000-0000, 총 11자리 숫자와 2개의 ‘-‘에 맞는 형식인지 검사하고, 틀린 형식이면 맞는 형식으로 입력 받아야 함.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>입력 예)</p>
+
+<p><img src="https://github.com/enfycius/enfycius.github.io/blob/main/assets/images/python/assignment/ass_py0.png?raw=true" alt="ass_py0"></p>
+
+<p>!! 잘못된 계좌의 입력 예, 계좌번호: 123-4567이면, 다시 입력 요구</p>
+
+<ol>
+  <li>user1에서 user2로 해당 금액을 이체하는 경우:
+    <ul>
+      <li>이체는 사용자의 잔고에서 이체금액 만큼 출금해서 다른 사용자의 잔고에 입금하면 됨</li>
+      <li>조건: 이체시, 현재 잔고가 출금할 금액보다 많은지를 확인하고, 현재 잔고가 출금액보다 적은 경우, 출금액을 새로 입력 받아야 함.</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="답변">답변</h1>
+
+<h2 id="내용-1">내용</h2>
+
+<p>문제에서 제시된 조건들을 모두 만족시키는 코드를 작성하기 전에, 먼저 문제에 주어진 Account 클래스의 속성에 대한 조건을 살펴볼 필요가 있다.</p>
+
+<p>조건은 다음과 같으며,</p>
+
+<ul>
+  <li>클래스 이름: Account</li>
+  <li>속성:
+    <ul>
+      <li>(1) 계좌소유주 이름(name): 공개,</li>
+      <li>(2) 계좌번호(accountNum: 000-0000-0000, 총 11자리 숫자와 2개의 ‘-‘): 비공개,</li>
+      <li>(3) 잔고(balance): 비공개</li>
+    </ul>
+  </li>
+</ul>
+
+<p>여기에서 눈여겨 보아야 할 점은, 멤버 변수 name과는 달리  멤버변수 accountNum, balance 등이 공개가 아닌 <strong>비공개</strong>라는 점이다.</p>
+
+<p>이는 <strong>정보 은닉(Information Hiding)</strong>의 개념으로서, 이를 구현하기 위해서는 <strong>접근 제어자(Access Modifier)</strong>에 대한 개념을 사전에 숙지하고 있어야 한다.</p>
+
+<p>그런데 타 언어와는 다르게 Python의 경우에는 별도의 접근 제어자를 사용하고 있지는 않아서 이러한 요구사항을 충족시키기 위해서는 Python만의 <strong>작명법(naming)</strong>을 알고 있어야 한다. <img class="emoji" title=":cry:" alt=":cry:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png" height="20" width="20"><img class="emoji" title=":cry:" alt=":cry:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png" height="20" width="20"></p>
+
+<p>먼저 <strong>public(공개)</strong>이다.</p>
+
+<p>이것은 클래스의 외부에서도 접근할 수 있으며, 일반적으로 접근 제어자들 중 가장 넓은 범위(scope)를 가진다.</p>
+
+<p>public의 경우에는 별도의 작명법이 존재하지는 않으나, 접미사에 2개 이상의 underscore를 사용하게 되면 public이 된다.</p>
+
+<p>또한 파이썬에서는 클래스 내의 모든 멤버들에 기본적으로 public을 부여한다.</p>
+
+<p>두 번째는 <strong>private(비공개)</strong>이다.</p>
+
+<p>private의 경우에는 public과는 달리 별도의 작명법이 존재하고 있으며, 다음처럼 접두사로서 두 개의 underscore를 변수 혹은 메소드 앞에 붙여주면 된다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">self</span><span class="p">.</span><span class="n">__accountNum</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__inFunc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div></div>
+
+<p>또한 접미사는 밑줄 한 개까지 허용된다.</p>
+
+<p>다음을 살펴보자.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">self</span><span class="p">.</span><span class="n">__accountNum_</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__inFunc_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div></div>
+
+<p>이 때 접미사를 2개 이상 사용하게 되면 public이 됨에 주의하자.</p>
+
+<p>파이썬은 이것에 대해 타 언어와 대비되는 특징도 지니고 있는데,</p>
+
+<p>접두사로 두 개의 underscore를 가지는 모든 멤버들을 다음으로 변경해서</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">_object</span><span class="p">.</span><span class="n">_class__variable</span>
+</code></pre></div></div>
+
+<p>클래스의 외부에서도 이에 접근이 가능하다는 점이다.</p>
+
+<p>물론 권고할 만한 사항은 아니므로, 가급적 그러한 사용을 자제하는 것이 좋겠다.</p>
+
+<p>세 번째는 <strong>protected</strong>이다.</p>
+
+<p>protected의 경우에는 private과는 달리 해당 클래스를 상속하는 하위 클래스에서도 접근이 가능하다.</p>
+
+<p>protected의 경우에도 private과 마찬가지로 별도의 작명법이 존재하고 있으며, 다음처럼 접두사로서 한 개의 underscore를 변수 혹은 메소드 앞에 붙여주면 된다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">self</span><span class="p">.</span><span class="n">_accountNum</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">_inFunc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div></div>
+
+<p>이 역시 private과 마찬가지로 접미사로 underscore 1개까지 허용된다.</p>
+
+<p>그러므로 위의 정보들을 종합해보았을 때,</p>
+
+<p>공개 처리된 멤버 변수에는 public의 작명법을,</p>
+
+<p>비공개 처리된 멤버 변수에는 private의 작명법에 따라 작성해주면 된다.</p>
+
+<p>또한 문제에서 이와 관련된 조건이 별도로 주어져 있지는 않으나, 개인적으로 인스턴스를 생성할 때 값들을 전달하여 이를 멤버 변수에 저장하고 싶기 때문에 필자는 생성자(Constructor)를 최대한 이용해보려 한다.</p>
+
+<p>그러므로 필자의 경우에는 Account 클래스의 생성자(Constructor)를 다음과 같이 작성하였다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Account</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="n">balance</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">__accountNum</span> <span class="o">=</span> <span class="n">accountNum</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">=</span> <span class="n">balance</span>
+</code></pre></div></div>
+
+<p>위의 코드를 이해하기 위해서는 먼저 <strong>생성자</strong>에 대한 이해와 <strong>self</strong>에 대한 이해가 선행되어야 하지만, 이에 대한 설명을 본 강좌에서 진행한다면 너무 길어져 프로그램의 논리 흐름에 집중하기 어렵기 때문에 이에 대해서는 따로 강좌로 빼내어 설명할 계획이다.</p>
+
+<p>여기까지 속성에 대한 작성을 완료하였다면, 메소드에 대한 조건으로 내려가보자.</p>
+
+<p>메소드에 대한 조건은 다음과 같다.</p>
+
+<ul>
+  <li>메소드:
+    <ul>
+      <li>(1) 입금(deposit) 메소드
+        <ul>
+          <li>입력: 입금할 금액, 실행 후: 현재잔고+입금액</li>
+        </ul>
+      </li>
+      <li>(2) 출금(withdraw) 메소드
+        <ul>
+          <li>입력: 출금할 금액, 실행 후: 현재잔고-출금액</li>
+        </ul>
+      </li>
+      <li>(3) 정보출력(print_accountInfo) 메소드
+        <ul>
+          <li>소유주 이름, 계좌번호, 현재잔고 출력</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>이 역시도 이미 주어진 조건으로 미루어 보아 독자분들께서 충분히 해결할 수 있을 것으로 판단하여 그나마 의미가 있을 법한 withdraw 메소드에 대해서만 설명을 하려 한다.</p>
+
+<p>먼저 필자의 경우에는 withdraw 메소드를 작성하기 위해서 처리 시나리오 하에 있는 다음의 조건도 참고를 해보았는데, 이는 다음과 같다.</p>
+
+<ol>
+  <li>user1에서 user2로 해당 금액을 이체하는 경우:
+    <ul>
+      <li>이체는 사용자의 잔고에서 이체금액 만큼 출금해서 다른 사용자의 잔고에 입금하면 됨</li>
+      <li>조건: 이체시, 현재 잔고가 출금할 금액보다 많은지를 확인하고, 현재 잔고가 출금액보다 적은 경우, 출금액을 새로 입력 받아야 함.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>이 중 조건 부분만 읽어보면,</p>
+
+<blockquote>
+  <p>조건: 이체시, 현재 잔고가 출금할 금액보다 많은지를 확인하고, 현재 잔고가 출금액보다 적은 경우, 출금액을 새로 입력 받아야 함.</p>
+</blockquote>
+
+<p>이라고 작성이 되어있다.</p>
+
+<p>즉, 현재 잔고가 출금할 금액보다 많은지/많지 않은지를 프로그램이 판단하게끔 하여 그에 맞는 로직을 실행하게끔 흐름을 분기시켜주면 되겠다.</p>
+
+<p>필자는 이를 withdraw 메소드에서 처리하게끔 로직을 작성하였으며, 잔고가 출금액보다 적은 경우에는 1을 반환하고, 그렇지 않은 경우에는 <strong>현재잔고-출금액</strong>을 수행한 후 0을 반환하게끔 하였다.</p>
+
+<p>즉, 코드는 다음과 같다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">&lt;</span> <span class="n">amount</span><span class="p">):</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">-=</span> <span class="n">amount</span>
+            <span class="k">return</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<p>이렇게 하였을 경우의 장점은 다음과 같이 조건문을 구성할 수 있다는 점이다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="o">~</span><span class="p">.</span><span class="n">withdraw</span><span class="p">(</span><span class="n">amount</span><span class="p">)):</span>     <span class="c1"># ~ 인스턴스의 amount를 인자로 받는 withdraw 메소드를 호출한 후, 잔고보다 출금액이 더 많다면 아래의 구문 실행
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"재입력"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>       <span class="c1"># 그렇지 않다면(잔고가 출금액보다 더 많거나 같다면) 아래의 구문 실행
+</span>    <span class="o">~</span><span class="p">.</span><span class="n">deposit</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>그러므로 문제에서 주어진 Account 클래스에 대한 조건들을 이용하여 아래와 같은 코드를 작성할 수 있다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Account</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="n">balance</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">__accountNum</span> <span class="o">=</span> <span class="n">accountNum</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">=</span> <span class="n">balance</span>
+
+    <span class="k">def</span> <span class="nf">deposit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">+=</span> <span class="n">amount</span>
+    
+    <span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">&lt;</span> <span class="n">amount</span><span class="p">):</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">-=</span> <span class="n">amount</span>
+            <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">print_accountInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">"{:&gt;10} {:&gt;10} {:&gt;10}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">__accountNum</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span><span class="p">)</span>
+    
+</code></pre></div></div>
+
+<p>여기까지 Account 클래스에 대한 코드는 모두 작성하였다.</p>
+
+<p>지금부터는 이를 이용하여 문제에 명시되어 있는 시나리오를 처리하는 코드를 작성해볼 것이다.</p>
+
+<p>먼저 처리 시나리오 1번은 다음과 같으며,</p>
+
+<ol>
+  <li>소유주 이름, 계좌번호, 잔고의 입력을 받아 3개의 Account 인스턴스 user1, user2, user3를 생성하고 그 내용을 출력
+    <ul>
+      <li>조건: 계좌번호는 000-0000-0000, 총 11자리 숫자와 2개의 ‘-‘에 맞는 형식인지 검사하고, 틀린 형식이면 맞는 형식으로 입력 받아야 함.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>입력 예)</p>
+
+<p><img src="https://github.com/enfycius/enfycius.github.io/blob/main/assets/images/python/assignment/ass_py0.png?raw=true" alt="ass_py0"></p>
+
+<p>!! 잘못된 계좌의 입력 예, 계좌번호: 123-4567이면, 다시 입력 요구</p>
+
+<p>1번 조건에 의하여 기본적으로 반복의 횟수를 3회로 제한하여도 되지만, 잘못된 계좌가 사용자로부터 입력되었을 경우 즉, 마지막 !! 에 명시되어 있는 조건에 대비하여 필자의 경우에는 기본 구성을 무한 Loop로 하였다.</p>
+
+<p>그리하여 기본적으로 큰 틀은 무한반복이며,</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>     <span class="c1"># 무한 반복
+</span></code></pre></div></div>
+
+<p>특정 조건 즉, 정상적으로 3회를 입력하였을 경우에는 이를 탈출하게끔 구성하였다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># 정상적으로 입력한 횟수를 담는 변수
+</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">):</span>     <span class="c1"># 그 값이 3이라면(3회 모두 올바르게 입력하였다면)
+</span>        <span class="k">break</span>       <span class="c1"># 탈출
+</span></code></pre></div></div>
+
+<p>또한, 계좌의 형식이 올바른 경우에는 인스턴스를 생성하여 곧바로 List 자료구조에 담기 위해 별도의 List 자료구조도 선언을 하였다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_objects</span> <span class="o">=</span> <span class="p">[]</span>     <span class="c1"># List
+</span></code></pre></div></div>
+
+<p>여기까지가 기본 설정인 셈이고, 지금부터는 올바른 계좌 번호의 형식인지를 따지는 로직을 작성해보자.</p>
+
+<p>먼저 사용자로부터 이름, 계좌번호, 잔고를 입력받기 위해서 적절히 출력문을 구성해준 후 이것들을 각각 변수 name, accountNum, balance에 담아주는 입력문도 작성을 해준다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">number_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_objects</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"{:&gt;10} {:&gt;10} {:&gt;10}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="s">"이름"</span><span class="p">,</span> <span class="s">"계좌번호"</span><span class="p">,</span> <span class="s">"잔고"</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"user{}: "</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="n">balance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>그 후 accountNum이 숫자로 구성된 11자리의 계좌번호 형식을 만족하는지 검사하는 구문을 작성해주면 되는데, 이때 알아야 할 사실이 한 가지 있다.</p>
+
+<p>바로 input의 반환형이 ‘str’ 이라는 점이다.</p>
+
+<p>즉, 숫자를 입력하여도 문자열로 반환된다는 것이다.</p>
+
+<p>그러므로 accountNum 변수에 들어간 값은 숫자가 아닌 문자열이다.</p>
+
+<p>그리하여 필자는 우선 문자열에 대해 반복문을 구성하였으며, 반복을 진행하면서 문자열의 문자 하나하나가 숫자인지를 판단하는 조건식을 구성하고, 만약 숫자라면 그 숫자의 개수를 count해주는 별도의 변수를 마련하여 이를 처리하였다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">number_count</span> <span class="o">=</span> <span class="mi">0</span>        <span class="c1"># 계좌 번호의 숫자 갯수를 저장하는 변수
+</span>
+<span class="n">my_objects</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"{:&gt;10} {:&gt;10} {:&gt;10}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="s">"이름"</span><span class="p">,</span> <span class="s">"계좌번호"</span><span class="p">,</span> <span class="s">"잔고"</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"user{}: "</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="n">balance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">accountNum</span><span class="p">:</span>    <span class="c1"># accountNum 문자열에 대해서 반복문을 구성한 후
+</span>        <span class="k">if</span><span class="p">(</span><span class="n">k</span><span class="p">.</span><span class="n">isnumeric</span><span class="p">()):</span>  <span class="c1"># isnumeric() 함수를 이용하여 k에 담긴 문자가 숫자인지를 판단한다. 만약 그러하다면 isnumeric() 함수는 True를, 반대의 경우에는 False를 반환하여 해당 조건문의 실행 여부를 결정한다.        
+</span>            <span class="n">number_count</span> <span class="o">=</span> <span class="n">number_count</span> <span class="o">+</span> <span class="mi">1</span>     <span class="c1"># k가 숫자라면 number_count의 값을 1만큼 증가
+</span></code></pre></div></div>
+
+<p>이렇게 count 해준 number_count의 값이 계좌번호의 숫자의 개수 11과 일치하고, accountNum의 길이가 13과 일치하며, 4번째와 9번째 문자가 ‘-‘로 같다면, Account 클래스의 인스턴스를 생성하여 이를 리스트에 담아주고, i의 값을 1만큼 count 해주었다. 조건을 만족하지 않았을 경우에는 재입력을 요구하였다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">number_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_objects</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="n">number_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"{:&gt;10} {:&gt;10} {:&gt;10}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="s">"이름"</span><span class="p">,</span> <span class="s">"계좌번호"</span><span class="p">,</span> <span class="s">"잔고"</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"user{}: "</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="n">balance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">accountNum</span><span class="p">:</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">k</span><span class="p">.</span><span class="n">isnumeric</span><span class="p">()):</span>
+            <span class="n">number_count</span> <span class="o">=</span> <span class="n">number_count</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">accountNum</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13</span> <span class="ow">and</span> <span class="n">number_count</span> <span class="o">==</span> <span class="mi">11</span> <span class="ow">and</span> <span class="n">accountNum</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s">'-'</span> <span class="ow">and</span> <span class="n">accountNum</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">==</span> <span class="s">'-'</span><span class="p">):</span>     <span class="c1"># accountNum의 길이가 13이고 number_count의 값이 11이며, accountNum[3] 즉, 4번째 문자가 '-'이고, accountNum[8] 즉, 9번째 문자가 '-'이라면,
+</span>        <span class="n">my_objects</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">Account</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">balance</span><span class="p">)))</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"재입력"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>조건문에서 accountNum의 길이가 13이 아닐 경우 단축평가(short circuit)에 의하여 나머지 조건은 검사하지 않으므로, 뒤의 조건 식에서의 값에 대한 인덱스 참조 시 다음 에러가 발생할 걱정은 하지 않아도 되겠다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>IndexError: list index out of range
+</code></pre></div></div>
+
+<p><img src="https://github.com/enfycius/enfycius.github.io/blob/main/assets/images/python/assignment/ass_py0.png?raw=true" alt="ass_py0"></p>
+
+<p>이렇게 3회 모두 정상적으로 입력을 한 후에는 위의 그림에서와 같이 사용자로부터 입력받은 정보들을 모두 출력하게끔 작성하였다.</p>
+
+<p>또한 이를 위해서는 Account 클래스 내의 멤버 함수 print_accountInfo()를 사전에 작성해놓았으니, 이를 활용하면 되겠다.</p>
+
+<p>즉,</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">number_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_objects</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="n">number_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"{:&gt;10} {:&gt;10} {:&gt;10}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="s">"이름"</span><span class="p">,</span> <span class="s">"계좌번호"</span><span class="p">,</span> <span class="s">"잔고"</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"user{}: "</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="n">balance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">accountNum</span><span class="p">:</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">k</span><span class="p">.</span><span class="n">isnumeric</span><span class="p">()):</span>
+            <span class="n">number_count</span> <span class="o">=</span> <span class="n">number_count</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">accountNum</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13</span> <span class="ow">and</span> <span class="n">number_count</span> <span class="o">==</span> <span class="mi">11</span> <span class="ow">and</span> <span class="n">accountNum</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s">'-'</span> <span class="ow">and</span> <span class="n">accountNum</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">==</span> <span class="s">'-'</span><span class="p">):</span>
+        <span class="n">my_objects</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">Account</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">balance</span><span class="p">)))</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"재입력"</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">my_objects</span><span class="p">:</span>    <span class="c1"># List에 저장된 인스턴스들을 순차적으로 b에 담은 후,
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">print_accountInfo</span><span class="p">())</span>    <span class="c1"># 해당 인스턴스의 print_accountInfo() 메소드를 호출한다.    
+</span></code></pre></div></div>
+
+<p>여기까지 완료하였다면, 마지막으로 출금과 입금에 대한 처리를 진행해보자.</p>
+
+<p>두 번째 처리 시나리오는 다음과 같으며,</p>
+
+<ol>
+  <li>user1에서 user2로 해당 금액을 이체하는 경우:
+    <ul>
+      <li>이체는 사용자의 잔고에서 이체금액 만큼 출금해서 다른 사용자의 잔고에 입금하면 됨</li>
+      <li>조건: 이체시, 현재 잔고가 출금할 금액보다 많은지를 확인하고, 현재 잔고가 출금액보다 적은 경우, 출금액을 새로 입력 받아야 함.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>먼저 위의 처리 시나리오 중 user1에서 user2로 해당 금액을 이체한다는 내용이 있는데, 이로 미루어보아 프로그램 사용자로부터 두 명의 사람을 입력받아 첫 번째에 입력한 사람으로부터 두 번째에 입력한 사람에게 금액을 이체해주면 된다는 것을 알 수 있다.</p>
+
+<blockquote>
+  <p>그런데 만약에 사용자로부터 입력받은 user1과 user2가 프로그램 상 존재하지 않는 사용자라면?</p>
+</blockquote>
+
+<p>그래서 이에 대한 처리도 해줘야 한다.</p>
+
+<p>이는 마치 계좌번호를 잘못 입력하였을 경우 다시 입력받게끔 하는것과 비슷한 방식으로 처리를 해주면 되겠다.</p>
+
+<p>즉, 잘못 입력할 경우를 대비하여 무한 반복문으로 구성을 해준 후,</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</code></pre></div></div>
+
+<p>프로그램 상 존재하는 사람을 2회 모두 입력하였을 경우 반복문을 탈출하게끔 구성을 해주면 된다.</p>
+
+<p>2회 처리를 위해 먼저 위에서 사용했었던 변수 i를 0으로 설정한 후, 조건문을 작성해준다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">break</span>
+</code></pre></div></div>
+
+<p>프로그램 사용자로부터 두 사람의 이름을 입력받도록 적절한 출력문을 구성해주고, 첫 번째 입력한 사람의 이름을 담는 변수 name1, 두 번째 입력한 사람의 이름을 담는 변수 name2를 이용하여 input문도 구성을 해준다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"사용자 이름 입력: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name1</span><span class="p">,</span> <span class="n">name2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>그 후 위에서 Account의 인스턴스를 담았던 List인 my_objects에서 해당 인스턴스의 인덱스 값과 인스턴스를 순차적으로 idx와 b에 담아 인스턴스 b가 가지고 있는 멤버 변수인 name이 사용자가 입력한 첫 번째 사람의 이름과 같은지 또는 두 번째 사람의 이름과 같은지를 검사한 후, 만약에 그러하다면(같다면) i를 count해주고, 인덱스 값을 담는 별도의 리스트를 마련하여 해당 인스턴스의 인덱스 값을 저장해준다.</p>
+
+<p>순차적으로 인덱스 값과 리스트의 값을 변수에 저장하여 이를 처리하기 위해서는 별도의 처리 없이 다음과 같이 enumerate를 이용하면 된다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_objects</span><span class="p">):</span>    <span class="c1"># idx에는 인덱스 값이, b에는 List인 my_objects의 값이 저장된다. 
+</span></code></pre></div></div>
+
+<p>이 때, 리스트의 길이는 다음과 같이 2로 제한한다.
+(프로그램 사용자로부터 입력받는 사람의 수는 2명이기 때문.)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>위의 내용을 종합하여 다음의 코드를 작성할 수 있다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"사용자 이름 입력: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name1</span><span class="p">,</span> <span class="n">name2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_objects</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name1</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span>
+        <span class="k">elif</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name2</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span>
+</code></pre></div></div>
+
+<p>필자는 위의 계좌번호가 잘못 입력되었을 경우의 처리와는 다른 방식으로 i의 값이 2회가 아니었을 경우에는 사용자로부터 처음부터 두 사람을 다시 입력하게끔 로직을 작성하였다.</p>
+
+<p>즉,</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>       <span class="c1"># 처음부터 다시 입력받아야 하므로 i의 값을 0으로 설정
+</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"사용자 이름 입력: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name1</span><span class="p">,</span> <span class="n">name2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_objects</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name1</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span>
+        <span class="k">elif</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name2</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"사용자가 없습니다."</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"다시 입력"</span><span class="p">)</span>
+        <span class="k">continue</span>    <span class="c1"># 아래 구문 실행 없이 다시 반복문의 조건부로 거슬러 올라간다.
+</span></code></pre></div></div>
+
+<p>만약 i가 2라면(즉, 프로그램 사용자가 입력한 사람이 모두 프로그램 상 존재하는 사용자였다면),</p>
+
+<p>프로그램 사용자로부터 출금액을 입력받은 후, 정수 값으로 변환하여 이를 amount라는 출금액을 담는 변수에 저장해준 후,</p>
+
+<p>첫 번째 입력한 사람에게서 사용자로부터 입력받은 출금액을 두 번째 입력한 사람에게 이체해주는 로직을 작성해주면 된다.</p>
+
+<p>이 때 위의 Account 클래스의 withdraw 메소드에 대해 설명했던 바와 같이 출금액이 잔고보다 더 많다면 재입력을, 그렇지 않다면 이체를 해주면 되겠다.</p>
+
+<p>즉,</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>     <span class="c1"># 이곳에 의하여
+</span>        <span class="k">break</span>       <span class="c1"># 바깥쪽 반복문도 탈출
+</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"사용자 이름 입력: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name1</span><span class="p">,</span> <span class="n">name2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_objects</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name1</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span>
+        <span class="k">elif</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name2</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"사용자가 없습니다."</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"다시 입력"</span><span class="p">)</span>
+        <span class="k">continue</span>
+
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">amount</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'출금액: '</span><span class="p">))</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]].</span><span class="n">withdraw</span><span class="p">(</span><span class="n">amount</span><span class="p">)):</span>    <span class="c1"># my_objects List에서 my_list[0]에 담긴 인덱스값에 해당하는 인스턴스에 대하여 amount를 인자로 받는 withdraw 메소드를 호출한 후, True라면, 즉 잔고보다 출금액이 더 많다면, 
+</span>            <span class="k">print</span><span class="p">(</span><span class="s">"재입력"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>       <span class="c1"># 그렇지 않다면
+</span>            <span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]].</span><span class="n">deposit</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>      <span class="c1"># 두 번째 객체에 이체를 해주면 된다.
+</span>            <span class="k">break</span>   <span class="c1"># 그 후 안쪽 반복문 탈출, 그 후 바깥쪽 반복문으로 거슬러 올라가나
+</span></code></pre></div></div>
+
+<blockquote>
+  <p>else 구문을 실행할 때는 if문에 의하여 이미 다음 구문이 실행되므로, 첫 번째 사용자로부터 출금이 이루어진 상태다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]].</span><span class="n">withdraw</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>이제 정말 마지막으로 첫 번째 입력한 사람의 정보와 두 번째 입력한 사람의 정보를 출력해주면 끝이다.</p>
+
+<p>이를 위해 위에서 작성해둔 Account 클래스 내의 print_accountInfo() 메소드를 이용하여 반환 값을 출력만 해주면 된다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]].</span><span class="n">print_accountInfo</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]].</span><span class="n">print_accountInfo</span><span class="p">())</span>
+</code></pre></div></div>
+
+<p>다음은 최종 코드이다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Account</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="n">balance</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">__accountNum</span> <span class="o">=</span> <span class="n">accountNum</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">=</span> <span class="n">balance</span>
+
+    <span class="k">def</span> <span class="nf">deposit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">+=</span> <span class="n">amount</span>
+
+    <span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">&lt;</span> <span class="n">amount</span><span class="p">):</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span> <span class="o">-=</span> <span class="n">amount</span>
+            <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">print_accountInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">"{:&gt;10} {:&gt;10} {:&gt;10}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">__accountNum</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">__balance</span><span class="p">)</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">number_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_objects</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="n">number_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"{:&gt;10} {:&gt;10} {:&gt;10}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="s">"이름"</span><span class="p">,</span> <span class="s">"계좌번호"</span><span class="p">,</span> <span class="s">"잔고"</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"user{}: "</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="n">balance</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">accountNum</span><span class="p">:</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">k</span><span class="p">.</span><span class="n">isnumeric</span><span class="p">()):</span>
+            <span class="n">number_count</span> <span class="o">=</span> <span class="n">number_count</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">accountNum</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13</span> <span class="ow">and</span> <span class="n">number_count</span> <span class="o">==</span> <span class="mi">11</span> <span class="ow">and</span> <span class="n">accountNum</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s">'-'</span> <span class="ow">and</span> <span class="n">accountNum</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">==</span> <span class="s">'-'</span><span class="p">):</span>
+        <span class="n">my_objects</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">Account</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">accountNum</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">balance</span><span class="p">)))</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"재입력"</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">my_objects</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">print_accountInfo</span><span class="p">())</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">break</span>
+
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"사용자 이름 입력: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+
+    <span class="n">name1</span><span class="p">,</span> <span class="n">name2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_objects</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name1</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span>
+        <span class="k">elif</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">name2</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">idx</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"사용자가 없습니다."</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"다시 입력"</span><span class="p">)</span>
+        <span class="k">continue</span>
+
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">amount</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'출금액: '</span><span class="p">))</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]].</span><span class="n">withdraw</span><span class="p">(</span><span class="n">amount</span><span class="p">)):</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"재입력"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]].</span><span class="n">deposit</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+            <span class="k">break</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]].</span><span class="n">print_accountInfo</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">my_objects</span><span class="p">[</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]].</span><span class="n">print_accountInfo</span><span class="p">())</span>
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#programming" class="page__taxonomy-item" rel="tag">Programming</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#python" class="page__taxonomy-item" rel="tag">Python</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#python" class="page__taxonomy-item" rel="tag">Python</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2021-02-05T00:00:00+09:00">February 5, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Python+%EA%B3%BC%EC%A0%9C%3A+%EC%9D%80%ED%96%89+%EB%AC%B8%EC%A0%9C%20http%3A%2F%2Flocalhost%3A4000%2Fpython%2FAssign-Python-2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fpython%2FAssign-Python-2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2Fpython%2FAssign-Python-2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/linux/Laptop_Cover_Option/" class="pagination--pager" title="노트북 덮개 설정 - Ubuntu
+">이전</a>
+    
+    
+      <a href="/cpp/Studying_Cpp-10/" class="pagination--pager" title="C++ Pointer, Reference 사용 시 주의할 점(Information Hiding)
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">참고</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithms/Studying-Algorithm-70/" rel="permalink">BOJ: 10926 ??!
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-28T00:00:00+09:00">June 28, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문제
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithms/Studying-Algorithm-69/" rel="permalink">BOJ: 15059 Hard choice
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-27T00:00:00+09:00">June 27, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문제
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithms/Studying-Algorithm-68/" rel="permalink">BOJ: 9653 스타워즈 로고
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-26T00:00:00+09:00">June 26, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문제
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/algorithms/Studying-Algorithm-67/" rel="permalink">BOJ: 11720 숫자의 합
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-25T00:00:00+09:00">June 25, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문제
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요...">
+  </form>
+  <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/enfycius" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/___o7k/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2021 종혁. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/python/Assign-Python-2/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/python/Assign Python-2"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://enfycius.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+  
+
+
+
+
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+       processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+
+  </body>
+</html>
