@@ -1,8 +1,0 @@
----
-title:  "Exhibition"
-permalink: /categories/Exhibition
-layout: enfycius_category
-taxonomy: Exhibition
----
-
-개발한 소프트웨어 모음
