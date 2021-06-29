@@ -1,6 +1,6 @@
 ---
 title:  "C"
-permalink: /category/C
+permalink: /category/c
 layout: enfycius_category
 taxonomy: C
 ---

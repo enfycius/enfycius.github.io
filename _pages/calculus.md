@@ -1,6 +1,6 @@
 ---
 title:  "Calculus"
-permalink: /category/Calculus
+permalink: /category/calculus
 layout: enfycius_category
 taxonomy: Calculus
 ---

@@ -1,6 +1,6 @@
 ---
 title:  "Linux"
-permalink: /category/Linux
+permalink: /category/linux
 layout: enfycius_category
 taxonomy: Linux
 ---

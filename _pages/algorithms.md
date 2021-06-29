@@ -1,6 +1,6 @@
 ---
 title:  "Algorithms"
-permalink: /category/Algorithms
+permalink: /category/algorithms
 layout: enfycius_category
 taxonomy: Algorithms
 ---

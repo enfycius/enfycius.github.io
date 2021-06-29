@@ -1,6 +1,6 @@
 ---
 title:  "Mechanics of Materials"
-permalink: /category/Mechanics-of-Materials
+permalink: /category/mechanics-of-materials
 layout: enfycius_category
 taxonomy: Mechanics of Materials
 ---

@@ -1,6 +1,6 @@
 ---
 title:  "Linear Algebra"
-permalink: /category/Linear-Algebra
+permalink: /category/linear-algebra
 layout: enfycius_category
 taxonomy: Linear Algebra
 ---

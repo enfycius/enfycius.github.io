@@ -1,6 +1,6 @@
 ---
 title:  "OpenCV"
-permalink: /category/OpenCV
+permalink: /category/opencv
 layout: enfycius_category
 taxonomy: OpenCV
 ---

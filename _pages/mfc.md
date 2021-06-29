@@ -1,6 +1,6 @@
 ---
 title:  "MFC"
-permalink: /category/MFC
+permalink: /category/mfc
 layout: enfycius_category
 taxonomy: MFC
 ---

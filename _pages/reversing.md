@@ -1,6 +1,6 @@
 ---
 title:  "Reversing"
-permalink: /category/Reversing
+permalink: /category/reversing
 layout: enfycius_category
 taxonomy: Reversing
 ---

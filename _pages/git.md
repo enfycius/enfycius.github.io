@@ -1,6 +1,6 @@
 ---
 title:  "Git"
-permalink: /category/Git
+permalink: /category/git
 layout: enfycius_category
 taxonomy: Git
 ---

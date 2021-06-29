@@ -1,6 +1,6 @@
 ---
 title:  "Differential Equation"
-permalink: /category/Differential-Equation
+permalink: /category/differential-equation
 layout: enfycius_category
 taxonomy: Differential Equation
 ---

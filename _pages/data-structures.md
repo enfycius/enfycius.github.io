@@ -1,6 +1,6 @@
 ---
 title:  "Data Structures"
-permalink: /category/Data-Structures
+permalink: /category/data-structures
 layout: enfycius_category
 taxonomy: Data Structures
 ---

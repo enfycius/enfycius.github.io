@@ -1,6 +1,6 @@
 ---
 title:  "Exhibition"
-permalink: /category/Exhibition
+permalink: /category/exhibition
 layout: enfycius_category
 taxonomy: Exhibition
 ---
