@@ -1,6 +1,6 @@
 ---
 title:  "C++"
-permalink: /categories/Cpp
+permalink: /cpp
 layout: enfycius_category
 taxonomy: C++
 ---
