@@ -5,7 +5,7 @@ classes: wide
 
 categories:
   - Linear Algebra
-  - C++
+  - Cpp
 tags:
   - Mathematics
   - Programming

@@ -4,7 +4,7 @@ title: "C++ Early Binding(Static Binding) & Late Binding(Dynamic Binding)"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
 tags:
   - C++
   - Programming

@@ -4,7 +4,7 @@ title: "C++ mutable 키워드, 그리고 그 외의 이야기들"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
 tags:
   - C++
   - Programming

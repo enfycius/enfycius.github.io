@@ -4,7 +4,7 @@ title: "C++ 상속 관계의 확장과 추상 클래스"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
 tags:
   - C++
   - Programming

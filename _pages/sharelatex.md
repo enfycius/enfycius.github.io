@@ -1,8 +1,7 @@
 ---
 title:  "ShareLaTeX"
 permalink: /categories/ShareLaTeX
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: ShareLaTeX
 ---
 

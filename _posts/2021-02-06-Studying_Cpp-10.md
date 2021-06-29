@@ -4,7 +4,7 @@ title: "C++ Pointer, Reference 사용 시 주의할 점(Information Hiding)"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
 tags:
   - C++
   - Programming

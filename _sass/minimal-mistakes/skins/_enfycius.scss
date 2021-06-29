@@ -1,14 +1,15 @@
 /* ==========================================================================
-   Air skin
+   Enfycius skin
    ========================================================================== */
 
 /* Colors */
 $background-color: #eeeeee !default;
 $text-color: #222831 !default;
 $muted-text-color: #393e46 !default;
-$primary-color: #0092ca !default;
+$primary-color: #00509d !default;
 $border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: $primary-color !default;
+$form-background-color: mix(#000, $background-color, 15%) !default;
 $link-color: #393e46 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
@@ -21,3 +22,38 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 .page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
 }
+
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}
+
+.fa-custom {
+  filter: invert(100%)
+}
+
+.archive {
+  a {
+    text-decoration: none;
+  }
+}
+
+.list__item {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  width: auto;
+  height: 200px;
+  text-align: center;
+  margin: 30px 0;
+  opacity: 0.75;
+  padding: 25px 0;
+
+  &:hover {
+    opacity: 1.0;
+  }
+}
+

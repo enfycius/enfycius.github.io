@@ -1,8 +1,7 @@
 ---
 title:  "Linux"
 permalink: /categories/Linux
-layout: category
-author_profile: true
+layout: enfycius_category
 taxonomy: Linux
 ---
 

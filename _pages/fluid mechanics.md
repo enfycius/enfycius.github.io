@@ -1,8 +1,7 @@
 ---
 title:  "Fluid Mechanics"
-permalink: /categories/Fluid Mechanics
-layout: category
-author_profile: true
+permalink: /categories/Fluid-Mechanics
+layout: enfycius_category
 taxonomy: Fluid Mechanics
 ---
 

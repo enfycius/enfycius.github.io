@@ -4,7 +4,7 @@ title: "C++ & Assembly : Settings for Visual Studio 2017"
 classes: wide
 
 categories:
-  - C++
+  - Cpp
   - Assembly
 tags:
   - Programming
