@@ -6,7 +6,7 @@ author_profile: true
 
 ![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=Enfycius&fontSize=70)
 
-:wave: Hello My name is Jonghyeok Kim, I am currently the leader of the PSG and YouHyeok team.
+:wave: Hello My name is Jonghyeok Kim, I am currently the leader of YouHyeok team.
 
 ### :runner: Career
 
@@ -19,7 +19,7 @@ author_profile: true
 |     2020.05 ~     | External Activities |                     Translator                    |                    JavaTPoint                  |
 |     2014.01.31 ~  |   Team Activities   |                 Leader, YouHyeok Team             |                        x                       |
 |     2019.11 ~     |   Team Activities   |                 Hacker, MOKA Team                 |             Sungkyunkwan University            |
-|     2019.12 ~     |   Team Activities   |                 Leader, PSG Team                  |                        x                       |
+| 2019.12 ~ 2021.07 |   Team Activities   |                 Leader, PSG Team                  |                        x                       |
 | 2020.10 ~ 2021.02 |   Team Activities   |               Leader, APPSILON Team               |                        x                       |
 |     2021.02 ~     |   Team Activities   |               Researcher, Dropper Lab             |                    Halliance                   |
 |     2021.02 ~     |   Team Activities   |               App Developer, 과제 다했니             |                    과제 다했니                    |
