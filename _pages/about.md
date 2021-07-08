@@ -33,8 +33,9 @@ author_profile: true
 |     2021.02 ~     |       Project       | The JHs Project<br />(JongHyeok's OS)             |                        x                       |
 |     2021.03 ~     |       Project       | The Apollo Project<br />(Hanbat-Assignment-Viewer)|                        x                       |
 |     2021.03 ~     |       Project       | The Pigbar Donut Project<br />(Information)       |                    과제 다했니                    |
-|     2021.02 ~     | Research Activities |                   XAI Researcher                  |  Mathematical Sciences Lab, Hanbat Nat'l Univ. |
-|     2021.03.22 ~ 2021.06.11 | Extracurricular Activities |  Math Assistant                  |  Nomad College, Hanbat Nat'l Univ.             | 
+|     2021.02 ~     | Research Activities | Resolving an Inverse Problem based on Deep Neural Networks | Mathematical Sciences Lab, Hanbat Nat'l Univ. |
+|     2021.07 ~     | Research Activities | Image Processing based on Deep Neural Networks for Detecting a Fender | Construction Information Technology Lab, Hanbat Nat'l Univ. |
+|     2021.03.22 ~ 2021.06.17 | Extracurricular Activities | Math Assistant | Nomad College, Hanbat Nat'l Univ. | 
 
 
 ### :rainbow: Works
